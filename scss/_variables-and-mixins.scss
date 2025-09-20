@@ -1,0 +1,32 @@
+
+$mobile: 550px;
+$small-tablet: 700px;
+$tablet: 800px;
+$desktop: 1000px;
+
+@font-face {
+  font-family: ComicRelief;
+  src: url('../fonts/ComicRelief-Regular.ttf');
+}
+@font-face {
+  font-family: 'outfit';
+  src: url('../fonts/Outfit-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'comic sans';
+  src: url('../fonts/Comic%20Sans%20MS.woff');
+}
+
+@mixin display-flex($justify-content, $align-items, $flex-flow, $gap) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-flow: $flex-flow;
+  gap: $gap;
+}
+
+@mixin display-grid($numCols, $min-width, $max-width, $gap) {
+  display: grid;
+  grid-template-columns: repeat($numCols, minmax($min-width, $max-width));
+  gap: $gap;
+}
