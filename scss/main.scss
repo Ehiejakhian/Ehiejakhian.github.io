@@ -22,6 +22,47 @@ body {
     overflow-x: hidden;
 }
 
+.loader {
+    position: fixed;
+    z-index: 250;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    .spinner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        border: 8px solid transparent;
+        border-top: 8px solid #0cb0e2;
+        border-radius: 50%;
+        animation: load .8s linear 0s infinite normal;
+        overflow: hidden;
+        
+        span {
+            position: absolute;
+            animation: none;
+            animation: counterRotate .8s linear 0s infinite normal;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
 #whole-content {
     width: 100%;
     padding: 100px 10%;

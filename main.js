@@ -1,3 +1,6 @@
+window.onload = () => {
+    document.querySelector('.loader').style.display = "none"
+}
 
 //-----//Time and greeting//------//
 let today = new Date()

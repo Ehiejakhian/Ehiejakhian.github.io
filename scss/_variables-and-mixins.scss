@@ -30,3 +30,12 @@ $desktop: 1000px;
   grid-template-columns: repeat($numCols, minmax($min-width, $max-width));
   gap: $gap;
 }
+
+@keyframes load {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@keyframes counterRotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-360deg);}
+}
