@@ -72,6 +72,11 @@ body {
     justify-content: center;
     right: 0;
     left: 0;
+    // * {
+    //     animation: appear .5s linear;
+    //     animation-timeline: view();
+    //     animation-range: entry 0% cover 50%;
+    // }
 }
 #whole-content>*>h1 {
     margin-top: 120px;
@@ -223,6 +228,26 @@ body {
         }
     }
 }
+//Now using the class name for the skills section
+.skills {
+    &__logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 2rem;
+        @media (max-width: 375px) {
+            gap: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .open__angle__bracket,
+        .close__angle__bracket {
+            font-size: 3rem;
+            color: #636363;
+        }
+    }
+}
 .skill-percent {
     width: 100%;
     border: 2px solid;
@@ -242,21 +267,80 @@ body {
     bottom: 0;
     z-index: -1;
 }
-.HTML .skill-percent::before {
-    background: #941111b7;
-    width: 95%;
+.HTML {
+    h2 {
+        color: #f30c0cb7;
+    }
+    .skill-percent::before {
+        background: #f30c0cb7;
+        width: 95%;
+    }
 }
-.CSS .skill-percent::before {
-    background: #0c3a6e;
-    width: 92%;
+    
+.CSS {
+    h2 {
+        color: #0763cc;
+    }
+    .skill-percent::before {
+        background: #0763cc;
+        width: 92%;
+    }
 }
-.JS .skill-percent::before {
-    background: #1d1d1d;
-    width: 32%;
+.JS {
+    h2 {
+        color: #cfb001;
+    }
+    .skill-percent::before {
+        background: #cfb001;
+        width: 60%;
+    }
 }
-.SCSS .skill-percent::before {
-    background: #470837;
-    width: 70%;
+.SCSS {
+    h2 {
+        color: #be0690;
+    }
+    .skill-percent::before {
+        background: #be0690;
+        width: 70%;
+    }
+}
+.JQuery {
+    h2 {
+        color: #0868ac;
+    }
+    .skill-percent::before {
+        background: #0868ac;
+        width: 40%;
+    }
+}
+.PHP {
+    h2 {
+        color: #4f5b93;
+    }
+    .skill-percent::before {
+        background: #4f5b93;
+        width: 20%;
+    }
+}
+.React {
+    h2 {
+        color: #61dbfb;
+    }
+    .skill-percent::before {
+        background: #61dbfb;
+        width: 20%;
+    }
+}
+.Python {
+    h2 {
+        background-image: linear-gradient(90deg, #306998 0%, #FFD43B 100%);
+        color: transparent;
+        background-clip: text;
+    }
+    .skill-percent::before {
+        background-image: linear-gradient(90deg, #306998 0%, #FFD43B 100%);
+        width: 30%;
+    }
 }
 
 

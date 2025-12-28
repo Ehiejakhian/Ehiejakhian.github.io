@@ -286,8 +286,7 @@ body {
   padding: 100px 10%;
   display: grid;
   grid-template-columns: repeat(4, 100px);
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   justify-content: center;
   right: 0;
   left: 0;
@@ -346,8 +345,7 @@ body {
 
 #greeting-el {
   background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -434,8 +432,7 @@ body {
   justify-content: center;
   flex-flow: row wrap;
   row-gap: 30px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 #skills .prog-lang > * {
   min-width: 200px;
@@ -447,6 +444,25 @@ body {
   flex-direction: column;
   gap: 0.8em;
   position: relative;
+}
+
+.skills__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+@media (max-width: 375px) {
+  .skills__logos {
+    gap: 10px;
+    font-size: 1.5rem;
+  }
+}
+.skills__logos .open__angle__bracket,
+.skills__logos .close__angle__bracket {
+  font-size: 3rem;
+  color: #636363;
 }
 
 .skill-percent {
@@ -470,24 +486,70 @@ body {
   z-index: -1;
 }
 
+.HTML h2 {
+  color: rgba(243, 12, 12, 0.7176470588);
+}
 .HTML .skill-percent::before {
-  background: rgba(148, 17, 17, 0.7176470588);
+  background: rgba(243, 12, 12, 0.7176470588);
   width: 95%;
 }
 
+.CSS h2 {
+  color: #0763cc;
+}
 .CSS .skill-percent::before {
-  background: #0c3a6e;
+  background: #0763cc;
   width: 92%;
 }
 
+.JS h2 {
+  color: #cfb001;
+}
 .JS .skill-percent::before {
-  background: #1d1d1d;
-  width: 32%;
+  background: #cfb001;
+  width: 60%;
 }
 
+.SCSS h2 {
+  color: #be0690;
+}
 .SCSS .skill-percent::before {
-  background: #470837;
+  background: #be0690;
   width: 70%;
+}
+
+.JQuery h2 {
+  color: #0868ac;
+}
+.JQuery .skill-percent::before {
+  background: #0868ac;
+  width: 40%;
+}
+
+.PHP h2 {
+  color: #4f5b93;
+}
+.PHP .skill-percent::before {
+  background: #4f5b93;
+  width: 20%;
+}
+
+.React h2 {
+  color: #61dbfb;
+}
+.React .skill-percent::before {
+  background: #61dbfb;
+  width: 20%;
+}
+
+.Python h2 {
+  background-image: linear-gradient(90deg, #306998 0%, #FFD43B 100%);
+  color: transparent;
+  background-clip: text;
+}
+.Python .skill-percent::before {
+  background-image: linear-gradient(90deg, #306998 0%, #FFD43B 100%);
+  width: 30%;
 }
 
 #projects {
@@ -833,8 +895,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
   justify-content: left;
   align-items: center;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   padding: 25px 10%;
   font-size: 100%;
   z-index: 1;
@@ -896,8 +957,7 @@ footer div {
     flex-direction: column;
   }
   #whole-project img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   footer {
     left: 0;

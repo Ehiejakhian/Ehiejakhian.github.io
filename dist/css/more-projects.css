@@ -371,8 +371,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
   justify-content: left;
   align-items: center;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   padding: 25px 10%;
   font-size: 100%;
   z-index: 1;
