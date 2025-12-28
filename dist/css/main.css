@@ -453,7 +453,7 @@ body {
   gap: 20px;
   font-size: 2rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .skills__logos {
     gap: 10px;
     font-size: 1.5rem;
