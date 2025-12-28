@@ -64,9 +64,10 @@ if (commentForm) {
     if (isValid) {
       // Simulate submission (since no backend)
       alert('Thank you for your comment!');
-      commentForm.reset();
+      console.log(name.value, email.value, comment.value);
       // Optionally, add the comment to the list
-      addComment(name.value.trim(), email.value.trim(), comment.value.trim());
+      addComment(name.value, email.value, comment.value);
+      commentForm.reset();
     }
   });
 }
