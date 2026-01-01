@@ -1,6 +1,6 @@
-@import './variables-and-mixins';
-@import './nav-menu';
-@import './projects';
+@use './variables-and-mixins' as *;
+@use './components/nav-menu' as *;
+@use './components/projects' as *;
 
 * {
   box-sizing: border-box;

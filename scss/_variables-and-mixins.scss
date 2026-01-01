@@ -24,6 +24,14 @@ $desktop: 1000px;
   flex-flow: $flex-flow;
   gap: $gap;
 }
+//I'm tires of writing display-flex
+@mixin df($j:normal, $a:normal, $fl:row, $g:0) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+  flex-flow: $fl;
+  gap: $g;
+}
 
 @mixin display-grid($numCols, $min-width, $max-width, $gap) {
   display: grid;

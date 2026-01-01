@@ -30,17 +30,17 @@ header {
   padding: 10px 10%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 100px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  gap: 0 25px;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 100;
   background: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  gap: 0 25px;
 }
 @media (min-width: 1000px) {
   header {
@@ -73,7 +73,7 @@ header {
     border-right: 1px double;
     border-bottom: none;
     color: #16a2cc;
-    background: black;
+    background: #000507;
   }
 }
 header .wrapper {
@@ -194,13 +194,13 @@ header .wrapper div.name h1 span {
   right: 0;
   bottom: 0;
   top: 0;
+  padding: 100px 10%;
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: right;
   align-items: none;
   flex-flow: column;
   gap: 1.5rem;
-  padding: 100px 10%;
-  background: rgba(0, 0, 0, 0.9);
 }
 @media (min-width: 550px) {
   #nav-menu .open-nav {

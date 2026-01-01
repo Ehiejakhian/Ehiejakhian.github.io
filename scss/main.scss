@@ -1,6 +1,6 @@
 
-@import './variables-and-mixins';
-@import './nav-menu';
+@use './variables-and-mixins' as *;
+@use './components/' as *;
 
 * {
     box-sizing: border-box;
@@ -110,14 +110,35 @@ body {
 #profile p:first-of-type {
     margin-top: 10px;
 }
-#profileImg {
-    border-radius: 50%;
-    max-width: 400px;
-    filter: brightness();
-    z-index: 2;
+//Using svg and img to create a profile picture with a frame
+.profile {
+    figure {
+        position: relative;
+        display: inline-block;
+        #profileImg {
+            border-radius: 50%;
+            max-width: 400px;
+            filter: brightness();
+            z-index: 2;
+        
+            @media (max-width: 29.68em) {
+                max-width: 15.7em;
+            }
+        }
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: auto;
+            z-index: -1;
+            fill: #0e0e0e;
 
-    @media (max-width: 29.68em) {
-        max-width: 15.7em;
+            @media (max-width: 29.68em) {
+                width: 350px;
+            }
+        }
     }
 }
 #greeting-el {
