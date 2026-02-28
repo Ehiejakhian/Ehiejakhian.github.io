@@ -25,29 +25,42 @@
       }
     }
     
+    #phone-link:hover {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: var(--text);
+    }
     #pinterest-link:hover {
       background: crimson;
+      border-color: crimson;
+      color: var(--text);
     }
     #linkedIn-link:hover {
       background: dodgerblue;
+      border-color: dodgerblue;
       color: var(--text);
     }
     #whatsapp-link:hover {
       background: green;
       color: var(--text);
+      border-color: green;
     }
     
     
     #upwork-link:hover {
       background: purple;
       color: var(--text);
+      border-color: purple;
     }
     #github-link:hover {
       background: white;
       color: black;
+      border-color: white;
     }
     #front-end-mentor-link:hover {
       background: blueviolet;
+      color: var(--text);
+      border-color: blueviolet;
     }
 
   }  

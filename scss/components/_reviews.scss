@@ -4,7 +4,7 @@
 
 .reviews {
   padding: 50px var(--side-padding);
-  @include df(normal, normal, column, 25px);
+  @include df(center, center, column, 25px);
   
   h1 {
     @include h2;

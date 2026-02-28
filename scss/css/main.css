@@ -329,6 +329,50 @@ main > section {
   flex-flow: column;
   gap: 10px;
 }
+.skills__content > div ul li.more {
+  min-height: 100px;
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  flex-flow: column;
+  gap: 10px;
+}
+.skills__content > div ul li.more a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 10px;
+}
+.skills__content > div ul li.more a span {
+  color: var(--text);
+  background: transparent;
+  padding: 10px 20px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 50px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  gap: 10px;
+}
+.skills__content > div ul li.more a span:hover {
+  color: var(--bg);
+  background: var(--text);
+  border-color: var(--bg);
+}
+.skills__content > div ul li.more a:hover {
+  background: rgba(204, 204, 204, 0.1);
+}
 
 .projects {
   min-height: 100dvh;
@@ -475,34 +519,47 @@ main > section {
   height: 20px;
   filter: brightness(0%) invert(1);
 }
+.contact__links #phone-link:hover {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: var(--text);
+}
 .contact__links #pinterest-link:hover {
   background: crimson;
+  border-color: crimson;
+  color: var(--text);
 }
 .contact__links #linkedIn-link:hover {
   background: dodgerblue;
+  border-color: dodgerblue;
   color: var(--text);
 }
 .contact__links #whatsapp-link:hover {
   background: green;
   color: var(--text);
+  border-color: green;
 }
 .contact__links #upwork-link:hover {
   background: purple;
   color: var(--text);
+  border-color: purple;
 }
 .contact__links #github-link:hover {
   background: white;
   color: black;
+  border-color: white;
 }
 .contact__links #front-end-mentor-link:hover {
   background: blueviolet;
+  color: var(--text);
+  border-color: blueviolet;
 }
 
 .reviews {
   padding: 50px var(--side-padding);
   display: flex;
-  justify-content: normal;
-  align-items: normal;
+  justify-content: center;
+  align-items: center;
   flex-flow: column;
   gap: 25px;
 }
