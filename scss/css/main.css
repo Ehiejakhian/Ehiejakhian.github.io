@@ -23,6 +23,7 @@
   src: url("../../assets/fonts/comic-sans.woff");
 }
 :root {
+  scroll-behavior: smooth;
   --side-padding: clamp(20px, 5dvw, 10%);
   --text: #fff;
   --bg: #000000;
@@ -68,7 +69,6 @@
 }
 
 body {
-  scroll-behavior: smooth;
   position: relative;
   font-family: "comic-sans", "comic-relief", "outfit";
   padding-top: 150px;
@@ -82,6 +82,9 @@ body {
   gap: 0;
 }
 
+main {
+  min-height: 70dvh;
+}
 main > section {
   padding-right: var(--side-padding);
   padding-left: var(--side-padding);
@@ -128,7 +131,7 @@ main > section {
 
 .profile {
   text-align: center;
-  min-height: 60dvh;
+  min-height: 70dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,8 +230,8 @@ main > section {
 @media (min-width: 750px) {
   .profile {
     display: flex;
-    justify-content: normal;
-    align-items: normal;
+    justify-content: center;
+    align-items: center;
     flex-flow: row;
     gap: 2rem;
     text-align: left;
@@ -632,29 +635,19 @@ main > section {
 
 footer {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
-  justify-content: left;
-  align-items: center;
-  column-gap: 25px;
-  padding: 25px 10%;
-  font-size: 100%;
+  padding: 25px var(--side-padding);
   z-index: 1;
-  background: rgb(20, 20, 20);
+  color: var(--text);
+  background: var(--header-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 20px;
 }
-
-footer h1 {
-  grid-column: 1/-1;
-}
-
-footer p {
-  grid-column: 1/-1;
-}
-
 footer div {
-  grid-column: 1/-1;
   padding: 10px 0;
-  color: #636363;
+  color: var(--gray);
 }
 
 .faq {
@@ -1018,8 +1011,14 @@ footer div {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
+@media (max-width: 500px) {
+  .projects__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+}
 .projects__content__each {
-  border: 2px solid beige;
   background: rgba(0, 0, 0, 0.5);
   color: var(--text);
   border-radius: 5px;
@@ -1041,12 +1040,13 @@ footer div {
   object-fit: cover;
 }
 .projects__content__each .details {
-  border-top: 2px solid beige;
+  background: #41431B;
+  color: var(--text);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  gap: 10px;
+  gap: 15px;
 }
 .projects__content__each .details h2 {
   padding: 10px;
@@ -1096,6 +1096,21 @@ footer div {
 .projects__content__each .details .tools i {
   font-size: 1.5rem;
   padding: 5px;
+}
+.projects__content__each .details .tools i.fa-html5 {
+  color: #e34c26;
+}
+.projects__content__each .details .tools i.fa-css3-alt {
+  color: #264de4;
+}
+.projects__content__each .details .tools i.fa-sass {
+  color: #cd6799;
+}
+.projects__content__each .details .tools i.fa-js {
+  color: #f0db4f;
+}
+.projects__content__each .details .tools i.fa-react {
+  color: #61dbfb;
 }
 .projects__more-btn {
   color: var(--text);

@@ -4,6 +4,7 @@ $tab: 750px;
 $desktop: 1100px;
 
 :root {
+  scroll-behavior: smooth;
   --side-padding: clamp(20px, 5dvw, 10%);
   --text: #fff;
   --bg: #000000;

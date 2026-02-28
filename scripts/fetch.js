@@ -1,6 +1,5 @@
-console.log(document.querySelector('.main-content').classList);
 
-fetch('/scripts/projects.json')
+fetch('../scripts/projects.json')
   .then(response => response.json())
   .then(data => {
     getProjects(data);
@@ -8,31 +7,58 @@ fetch('/scripts/projects.json')
 .catch(error => console.error('Error fetching projects:', error));
 
 
-let projectsContainer = document.getElementsByClassName('more__projects');
+let projectsContainer = document.querySelector('.projects__content');
+let projectTemplate = document.querySelector('#project-template');
+let projectElement = projectTemplate.content;
 function getProjects(projects) {
-  projectsContainer[0].innerHTML = '';
-  projects.forEach(project => {
-    const projectElement = document.createElement('div');
-    project.class.map(cls => projectElement.classList.add(cls));
-    //projectElement.className = project.class[0];
-    projectElement.innerHTML = `
-      <a href="${project.site}">
-        <img src="${project.image}" alt="projectImg">
-      </a>
-      <h2 id="project-title">${project.title}</h2>
-      <div class="project-details">
-        <div class="dev">
-          <a href="${project.code}">View Code</a>
-          <a href="${project.site}">View Site</a>
-        </div>
-        <div class="tools">
-          ${project.tools.map(tool => {
-            const tagClass = tool === 'javascript' ? 'js' : tool.toLowerCase();
-            return `<span class="${tagClass}-tag">${tool}</span>`;
-          }).join('')}
-        </div>
-      </div>
-    `;
-    projectsContainer[0].appendChild(projectElement);
-  });
+  projectsContainer.innerHTML = '';
+  
+  for (const [i, project] of Object.entries(projects)) {
+    if (projectsContainer.classList.contains('home-projects')) {
+      if (i >= 4) {
+        break;
+      }
+    }
+    let clone = document.importNode(projectElement, true);
+  
+    clone.querySelector('.projects__content__each__img').href = project.site;
+    clone.querySelector('.projects__content__each__img img').src = project.image;
+    clone.querySelector('.title').textContent = project.title;
+    clone.querySelector('.dev-links a:first-child').href = project.code;
+    clone.querySelector('.dev-links a:last-child').href = project.site;
+
+    let toolsContainer = clone.querySelector('.tools');
+    toolsContainer.innerHTML = '';
+    project.tools.forEach(tool => {
+      let toolEl = decideToolHTML(tool);
+      toolsContainer.appendChild(toolEl);
+    });
+  
+    projectsContainer.appendChild(clone);
+  }
+}
+
+function decideToolHTML(tool) {
+  let toolEl = document.createElement('i');
+  switch (tool.toLowerCase()) {
+    case 'html':
+      toolEl.classList.add('fa-brands', 'fa-html5');
+      break;
+    case 'css':
+      toolEl.classList.add('fa-brands', 'fa-css3-alt');
+      break;
+    case 'javascript':
+      toolEl.classList.add('fa-brands', 'fa-js');
+      break;
+    case 'react':
+      toolEl.classList.add('fa-brands', 'fa-react');
+      break;
+    case 'scss':
+    case 'sass':
+      toolEl.classList.add('fa-brands', 'fa-sass');
+      break;
+    default:
+      toolEl.textContent = tool;
+  }
+  return toolEl;
 }

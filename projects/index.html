@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Favicon and title-->
   <link rel="icon" type="image/jpg" sizes="32x32" href="../assets/images/myPictures/favicon.jpg">
-  <title>Ehi Ejakhian</title>
+  <title>Projects | Ehi Ejakhian</title>
 
   <!-- Meta tags -->
   <meta charset="UTF-8">
@@ -82,127 +83,137 @@
       <img src="../assets/images/myPictures/favicon.jpg"></span></div>
   </div>
 
-  <header>
-    <div class="wrapper">
+  <header class="header">
+    <div class="header__content">
       <div class="name">
-        <h1>Ehi <span>Ejakhian</span></h1>
+        <h1 title="My Name">Ehi <span>Ejakhian</span></h1>
       </div>
 
-      <div id="nav-menu">
-        <a class="nav-btn">
+      <input type="checkbox" name="nav-checkbox" id="nav-checkbox"/>
+      <label for="nav-checkbox" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <label for="nav-checkbox" id="nav-overlay"></label>
+      <nav class="header__content__nav">
+        <label for="nav-checkbox" class="menu-icon menu-close">
           <span></span>
           <span></span>
-          <span></span>
-        </a>
-        <nav>
-          <a href="../#">
-            <!--<img src="images/home.svg" alt="icon">-->
-            <span>Home</span></a>
-          <a href="../#skills">
-            <!--<img src="images/services.svg" alt="icon">-->
-            <span>Skills</span></a>
-          <a href="../#projects">
-            <!--<img src="images/project.svg" alt="icon">-->
-            <span>Projects</span></a>
-          <a href="../#education">
-            <!--<img src="images/education.svg" alt="icon">-->
-            <span>Education</span></a>
-          <a href="../#testimonials">
-            <!--<img src="images/testimonials.svg" alt="icon">-->
-            <span>Testimonials</span></a>
-          <a href="../#contact">
-            <!--<img src="images/contact.svg" alt="icon">-->
-            <span>Contact</span></a>
-        </nav>
-      </div>
+        </label>
+        <div class="header__content__nav__content">
+          <details class="details" name="nav__details" open>
+            <summary class="summary">
+              <span>Sections</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+              </svg>
+            </summary>
+            <ul class="details__content">
+              <li><a href="../">Home</a></li>
+              <li><a href="../#skills">Skills</a></li>
+              <li><a href="../#education">Education</a></li>
+              <li><a href="../#contact">Contact</a></li>
+              <li><a href="../#reviews">Reviews</a></li>
+              <li><a href="../#faqs">FAQs</a></li>
+            </ul>
+          </details>
+          <details class="details" name="nav__details">
+            <summary class="summary">
+              <span>Useful Links</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+              </svg>
+            </summary>
+            <ul class="details__content">
+              <li><a href="./">Front-end Projects</a></li>
+              <li><a href="../embedded-sys/">Arduino Projects</a></li>
+              <li><a href="../gallery/">Art Gallery</a></li>
+              <li><a href="../assets/Ejakhian_Ehi_Oseiwe_CV.pdf" download>Download CV</a></li>
+            </ul>
+          </details>
+        </div>
+      </nav>
     </div>
   </header>
 
-
-
   <main id="whole-content">
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <h1><span>Projects</span></h1>
 
-    <!-- MY ART GALLERY -->
-    <section class="gallery">
-      <h2>My Gallery</h2>
-      <div class="gallery__grid">
-        <figure>
-          <img src="./assets/images/My__Art/beautiful_girl.jpg"/>
-          <figcaption>Beautiful Girl painting</figcaption>
-        </figure>
-        <figure class="long wide">
-          <img src="./assets/images/My__Art/black_woman.jpg"/>
-          <figcaption>African Woman</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/old_man_red.jpg"/>
-          <figcaption>An Old man#s sketch</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/arcane1.jpg"/>
-          <figcaption>From the Arcane Series</figcaption>
-        </figure>
-        <figure class="long wide">
-          <img src="./assets/images/My__Art/boy_biro_sketch.jpg"/>
-          <figcaption>Myself, about 2 years ago</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/boy_in_hat.jpg"/>
-          <figcaption>Just for fun</figcaption>
-        </figure>
-        <figure class="long wide">
-          <img src="./assets/images/My__Art/br_collins_raw.png"/>
-          <figcaption>A Friend</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/girl_on_makeup.jpg"/>
-          <figcaption></figcaption>
-        </figure>
-        <figure class="wide">
-          <img src="./assets/images/My__Art/hair_styles.jpg"/>
-          <figcaption>Hair styles</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/humble_man.png"/>
-          <figcaption>One old painting</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/joan.png"/>
-          <figcaption>A Friend</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/wolverine.jpg"/>
-          <figcaption>Wolverine</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/large_hair.jpg"/>
-          <figcaption></figcaption>
-        </figure>
-        <figure class="wide">
-          <img src="./assets/images/My__Art/me_and_doc.jpg"/>
-          <figcaption>12 years ago</figcaption>
-        </figure>
-        <figure class="wide long">
-          <img src="./assets/images/My__Art/mum_friend.jpeg"/>
-          <figcaption>2002</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/spidey.jpg"/>
-          <figcaption>Spidey</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/fair_boy.png"/>
-          <figcaption>Too bright I suppose!</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/old_friend1.jpg"/>
-          <figcaption></figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/My__Art/sinestro.jpg"/>
-          <figcaption></figcaption>
-        </figure>
+      <div class="projects__content">
+        <template id="project-template">
+          <div class="projects__content__each">
+            <a class="projects__content__each__img" href="https://ehiejakhian.github.io/Frontend-Mentor---Conference-ticket-generator/">
+              <img src="https://res.cloudinary.com/dz209s6jk/image/upload/v1734612242/Challenges/c9o1buzwrz4kvvydxyv7.jpg" alt="projectImg">
+            </a>
+            <div class="details">
+              <h2 class="title">Conference Ticket Generator</h2>
+              <div class="dev-links">
+                <a href="https://github.com/Ehiejakhian/Frontend-Mentor---Conference-ticket-generator">View Code</a>
+                <a href="https://ehiejakhian.github.io/Frontend-Mentor---Conference-ticket-generator/">View Site</a>
+              </div>
+              <div class="tools">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+          </div>
+        </template>
       </div>
+      
+      <a href="../" id="see-more-projects" class="projects__more-btn">To Home</a>
+    </section>
+
+    <!-- FAQS -->
+    <section id="faqs" class="faq">
+      <h1>How...</h1>
+      <div class="faq__questions">
+        <details name="details">
+          <summary>Did you rate yourself?</summary>
+          <p>
+            For some of my skills, I used the progress value I had on the site I learn from. <a href="www.w3schools.org">W3schools</a> for example has a progress tracking system and I used that in some of the values. For the others, I just assumed.
+          </p>
+        </details>
+        <details name="details">
+          <summary>Did you start coding?</summary>
+          <p>
+            While attending classes for my National diploma in computer engineering, I was introduced a bit to HTML. I just got home, searched the stuff up on youtube and here I am. I was also inctroduced to Visual Basic using the .NET framework, and to C++ for writing Arduino code.
+          </p>
+        </details>
+        <details name="details">
+          <summary>About your hobbies?</summary>
+          <p>
+            I love sketching, drawing comics and animation. I draw a lot or at least, I used to. I love to sing too. I love reading about discoveries and new science concepts. I can say Coding is a hobby of mine too. I also love watching movies (maybe too much).
+            <br>Over all, I love telling others about God's purpose of a wonderful earth free from sufferning and pain. The bible may be old, but as one of Jehovah's witnesses, I believe it's a manual for life. See more about this gist at <a href="www.jw.org">JW.org</a>
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <img src="../assets/images/myPictures/Untitled38_20250812123033.png" alt="" class="me-smiling">
+      <h1>Contact Me</h1>
+      <div id="social-links" class="contact__links">
+        <a href="+2348142340182" id="phone-link"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://pin.it/6eYrRLUYm" id="pinterest-link"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="https://ng.linkedin.com/in/ehi-ejakhian-2302a7318" id="linkedIn-link"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://wa.me/+2348142340182?text=Hello%20Ehi.%20I%20checked%20your%20website.%20" id="whatsapp-link"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://discord.com/users/1427691425058783343" id="front-end-mentor-link"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://www.upwork.com/freelancers/~01287f253aaa0dc476?mp_source=share" id="upwork-link"><i class="fa-brands fa-upwork"></i></a>
+        <a href="https://github.com/Ehiejakhian" id="github-link"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.frontendmentor.io/profile/EhiEjakhian" id="front-end-mentor-link"><img src="../assets/images/logos/front-end-mentor.svg" alt="front-end-mentor logo"/></i></a>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="cv" id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p>Click the button below to download my CV.</p>
+      <a href="../assets/Ejakhian_Ehi_Oseiwe_CV.pdf" download>Download CV</a>
     </section>
   </main>
 
@@ -218,6 +229,7 @@
 
 
   <script defer src="../scripts/main.js"></script>
+  <script defer src="../scripts/fetch.js"></script>
   <script src="https://kit.fontawesome.com/e0883f8dbe.js" crossorigin="anonymous"></script>
 </body>
 </html>

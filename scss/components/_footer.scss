@@ -3,24 +3,13 @@
 
 footer {
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(50px, 100px));
-    justify-content: left;
-    align-items: center;
-    column-gap: 25px;
-    padding: 25px 10%;
-    font-size: 100%;
+    padding: 25px var(--side-padding);
     z-index: 1;
-    background: rgb(20, 20, 20);
-}
-footer h1 {
-    grid-column: 1/-1;
-}
-footer p {
-    grid-column: 1/-1;
-}
-footer div {
-    grid-column: 1/-1;
-    padding: 10px 0;
-    color: #636363;
+    color: var(--text);
+    background: var(--header-bg);
+    @include df(center, center, column, 20px);
+    & div {
+        padding: 10px 0;
+        color: var(--gray);
+    }
 }

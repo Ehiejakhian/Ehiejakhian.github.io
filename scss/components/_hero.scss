@@ -3,7 +3,7 @@
 
 .profile {
   text-align: center;
-  min-height: 60dvh;
+  min-height: 70dvh;
   @include df(center, center, column, 2rem);
   >* {
     align-items: center;
@@ -84,7 +84,7 @@
     }
   }
   @media (min-width: $tab) {
-    @include df(normal, normal, row, 2rem);
+    @include df(center, center, row, 2rem);
     text-align: left;
     >* {
       text-align: left;

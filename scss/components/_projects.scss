@@ -11,8 +11,10 @@
   &__content {
     width: 100%;
     @include dg(auto-fit, 300px, 1fr, 2rem);
+    @media (max-width: $mini-tab) {
+      @include dg(auto-fit, 250px, 1fr, 2rem);
+    }
     &__each {
-      border: 2px solid beige;
       background: rgba(#000000,.5);
       color: var(--text);
       border-radius: 5px;
@@ -29,8 +31,9 @@
         }
       }
       .details {
-        border-top: 2px solid beige;
-        @include df(center, center, column, 10px);
+        background: #41431B;
+        color: var(--text);
+        @include df(center, center, column, 15px);
         h2 {
           padding: 10px;
           text-align: center;
@@ -51,6 +54,11 @@
           i {
             font-size: 1.5rem;
             padding: 5px;
+            &.fa-html5 {color: #e34c26;}
+            &.fa-css3-alt {color: #264de4;}
+            &.fa-sass {color: #cd6799;}
+            &.fa-js {color: #f0db4f;}
+            &.fa-react {color: #61dbfb;}
           }
         }
       }

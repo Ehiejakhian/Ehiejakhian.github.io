@@ -77,7 +77,7 @@
     "title": "Javascript Calculator",
     "site": "https://ehiejakhian.github.io/My-First-JS-Calculator/",
     "code": "https://github.com/Ehiejakhian/My-First-JS-Calculator",
-    "image": "../../images/projects/simple-calc.png",
+    "image": "../../assets/images/projects/simple-calc.png",
     "description": "A simple JavaScript calculator that performs basic arithmetic operations.",
     "tools": ["html", "css", "javascript"]
   },
@@ -86,7 +86,7 @@
     "title": "Age Calculator",
     "site": "https://ehiejakhian.github.io/Age-calculator-app/",
     "code": "https://github.com/Ehiejakhian/Age-calculator-app",
-    "image": "../../images/projects/age-calculator.png",
+    "image": "../../assets/images/projects/age-calculator.png",
     "description": "A simple age calculator app that calculates your age based on your date of birth.",
     "tools": ["html", "scss", "javascript"]
   },
@@ -95,7 +95,7 @@
     "title": "Binary Calculator",
     "site": "https://ehiejakhian.github.io/Binary-Calculator/",
     "code": "https://github.com/Ehiejakhian/Binary-Calculator",
-    "image": "../../images/projects/binary-calc.png",
+    "image": "../../assets/images/projects/binary-calc.png",
     "description": "A simple binary calculator app that calculates decimal numbers to their binary, octal and hexadecimal equivalents.",
     "tools": ["html", "css", "javascript"]
   },
@@ -104,7 +104,7 @@
     "title": "Huddle landing page",
     "site": "https://ehiejakhian.github.io/Huddle-landing-page-with-a-single-introductory-section/",
     "code": "https://github.com/Ehiejakhian/Huddle-landing-page-with-a-single-introductory-section",
-    "image": "../../images/projects/Huddle-landing-page.png",
+    "image": "../../assets/images/projects/Huddle-landing-page.png",
     "description": "A responsive landing page for a tech startup.",
     "tools": ["html", "scss"]
   },
@@ -113,7 +113,7 @@
     "title": "Fylo data storage component",
     "site": "https://ehiejakhian.github.io/Fylo-data-storage-component/",
     "code": "https://github.com/Ehiejakhian/Fylo-data-storage-component",
-    "image": "../../images/projects/Fylo-data-storage-component.png",
+    "image": "../../assets/images/projects/Fylo-data-storage-component.png",
     "description": "A data storage component for Fylo.",
     "tools": ["html", "scss", "javascript"]
   },
@@ -122,7 +122,7 @@
     "title": "Newsletter sign-up form",
     "site": "https://ehiejakhian.github.io/Newsletter-sign-up-form-with-success-message/",
     "code": "https://github.com/Ehiejakhian/Newsletter-sign-up-form-with-success-message",
-    "image": "../../images/projects/newsletter-sign-up-page.png",
+    "image": "../../assets/images/projects/newsletter-sign-up-page.png",
     "description": "A newsletter sign-up form with success message.",
     "tools": ["html", "scss", "javascript"]
   },
@@ -131,7 +131,7 @@
     "title": "Contact Form",
     "site": "https://ehiejakhian.github.io/Contact-form/",
     "code": "https://github.com/Ehiejakhian/Contact-form",
-    "image": "../../images/projects/Contact-form.png",
+    "image": "../../assets/images/projects/Contact-form.png",
     "description": "A contact form component.",
     "tools": ["html", "scss", "javascript"]
   },
@@ -140,7 +140,7 @@
     "title": "Mortgage Repayment Calculator",
     "site": "https://ehiejakhian.github.io/Mortgage-repayment-calculator/",
     "code": "https://github.com/Ehiejakhian/Mortgage-repayment-calculator",
-    "image": "../../images/projects/mortgage-calculator.png",
+    "image": "../../assets/images/projects/mortgage-calculator.png",
     "description": "A mortgage repayment calculator.",
     "tools": ["html", "scss", "javascript"]
   },
@@ -149,7 +149,7 @@
     "title": "Intro Component with Sign-up form",
     "site": "https://ehiejakhian.github.io/Intro-component-with-sign-up-form/",
     "code": "https://github.com/Ehiejakhian/Intro-component-with-sign-up-form",
-    "image": "../../images/projects/intro-component-sign-up-page.png",
+    "image": "../../assets/images/projects/intro-component-sign-up-page.png",
     "description": "An intro component with sign-up form.",
     "tools": ["html", "scss", "javascript"]
   },
@@ -158,7 +158,7 @@
     "title": "Product preview card Component",
     "site": "https://ehiejakhian.github.io/Product-preview-card-component/",
     "code": "https://github.com/Ehiejakhian/Product-preview-card-component",
-    "image": "../../images/projects/product-preview-card-component-main.png",
+    "image": "../../assets/images/projects/product-preview-card-component-main.png",
     "description": "A product preview card component.",
     "tools": ["html", "scss"]
   },
@@ -167,7 +167,7 @@
     "title": "Clipboard Landing Page",
     "site": "https://ehiejakhian.github.io/Clipboard-landing-page/",
     "code": "https://github.com/Ehiejakhian/Clipboard-landing-page",
-    "image": "../../images/projects/clipboard.jpg",
+    "image": "../../assets/images/projects/clipboard.jpg",
     "description": "A landing page for Clipboard.",
     "tools": ["html", "css"]
   },
@@ -176,7 +176,7 @@
     "title": "FAQ Accordion",
     "site": "https://ehiejakhian.github.io/FAQ-accordion/",
     "code": "https://github.com/Ehiejakhian/FAQ-accordion",
-    "image": "../../images/projects/faq-accordion.jpg",
+    "image": "../../assets/images/projects/faq-accordion.jpg",
     "description": "An FAQ accordion component.",
     "tools": ["html", "css"]
   },
@@ -185,7 +185,7 @@
     "title": "Tip Calc",
     "site": "https://ehiejakhian.github.io/Tip-calculator-app/",
     "code": "https://github.com/Ehiejakhian/Tip-calculator-app",
-    "image": "../../images/projects/tip-calculator.png",
+    "image": "../../assets/images/projects/tip-calculator.png",
     "description": "A tip calculator app.",
     "tools": ["html", "css", "javascript"]
   },
@@ -194,7 +194,7 @@
     "title": "Fylo landing Page",
     "site": "https://ehiejakhian.github.io/Fylo-landing-page-with-two-column-layout/",
     "code": "https://github.com/Ehiejakhian/Fylo-landing-page-with-two-column-layout",
-    "image": "../../images/projects/fylo.jpg",
+    "image": "../../assets/images/projects/fylo.jpg",
     "description": "A landing page for Fylo with two-column layout.",
     "tools": ["html", "css"]
   },
@@ -203,7 +203,7 @@
     "title": "Huddle landing Page",
     "site": "https://ehiejakhian.github.io/Huddle-landing-page-with-alternating-feature-blocks/",
     "code": "https://github.com/Ehiejakhian/Huddle-landing-page-with-alternating-feature-blocks",
-    "image": "../../images/projects/huddle.jpg",
+    "image": "../../assets/images/projects/huddle.jpg",
     "description": "A landing page for Huddle with alternating feature blocks.",
     "tools": ["html", "css"]
   },
@@ -212,7 +212,7 @@
     "title": "NFT preview card component",
     "site": "https://ehiejakhian.github.io/NFT-preview-card-component/",
     "code": "https://github.com/Ehiejakhian/NFT-preview-card-component",
-    "image": "../../images/projects/nft.jpg",
+    "image": "../../assets/images/projects/nft.jpg",
     "description": "An NFT preview card component.",
     "tools": ["html", "css"]
   },
@@ -221,7 +221,7 @@
     "title": "Testimonials Grid",
     "site": "https://ehiejakhian.github.io/Testimonials-grid-section/",
     "code": "https://github.com/Ehiejakhian/Testimonials-grid-section",
-    "image": "../../images/projects/testmonials.jpg",
+    "image": "../../assets/images/projects/testmonials.jpg",
     "description": "A testimonials grid section.",
     "tools": ["html", "css"]
   },
@@ -239,7 +239,7 @@
     "title": "Blog Preview Card",
     "site": "https://ehiejakhian.github.io/ASS4-Frontendmentor.io/",
     "code": "https://github.com/Ehiejakhian/ASS4-Frontendmentor.io",
-    "image": "../../images/projects/blog-preview-card.png",
+    "image": "../../assets/images/projects/blog-preview-card.png",
     "description": "A blog preview card.",
     "tools": ["html", "css"]
   },
@@ -248,7 +248,7 @@
     "title": "Social Links Profile",
     "site": "https://ehiejakhian.github.io/FrontendmentorAss2/",
     "code": "https://github.com/Ehiejakhian/FrontendmentorAss2",
-    "image": "../../images/projects/social-links-profile.png",
+    "image": "../../assets/images/projects/social-links-profile.png",
     "description": "A social links profile component.",
     "tools": ["html", "css"]
   }

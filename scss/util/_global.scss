@@ -8,8 +8,6 @@
 }
 
 body { 
-  scroll-behavior: smooth;
-
   position: relative;
   font-family: 'comic-sans','comic-relief', 'outfit';
   padding-top: 150px;
@@ -20,6 +18,7 @@ body {
 }
 
 main {
+  min-height: 70dvh;
   >section {
     padding-right: var(--side-padding);
     padding-left: var(--side-padding);
