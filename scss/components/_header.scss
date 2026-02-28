@@ -1,0 +1,206 @@
+@use '../util/' as *;
+
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  padding: 10px var(--side-padding);
+  background: var(--header-bg);
+  anchor-name: --header;
+  @include df;
+  
+  &__content {
+    z-index: 10;
+    width: 100%;
+    @include df(space-between, center, row, 30px);
+    .name {
+      font-family: 'love-light';
+      @include df(center, center, row);
+      h1 {
+        // font-weight: 400;
+        white-space: nowrap;
+        span {
+          color: var(--teal);
+        }
+      } 
+    }
+    #nav-checkbox, #nav-overlay {
+      display: none;
+    }
+    #nav-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(#ccc, .3);
+      z-index: -1;
+    }
+    .menu-icon {
+      border: 1px solid;
+      padding: 10px;
+      width: 45px;
+      height: 40px;
+      transition: all .3s;
+      @include df(normal, normal, column, 4px);
+      span {
+        height: 3px;
+        background: var(--text);
+        transition: all .3s;
+      }
+      &:hover {
+        background: rgba(#ccc, .3);
+        color: var(--teal);
+        span {background: var(--teal);}
+      }
+      &.menu-close {
+        align-self: flex-end;
+        position: relative;
+        @include df(center, center);
+        span {
+          width: 30px;
+          position: absolute;
+          background: var(--bg);
+          transform: rotate(45deg);
+          &:nth-of-type(2) {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    #nav-checkbox:checked {
+      & ~ .menu-icon {
+        opacity: 0;
+      }
+      & ~ #nav-overlay {
+        display: block;
+      }
+      & ~ .header__content__nav {
+        transform: translateY(-100%);
+      }
+    }
+  }
+  @media (min-width: $tab) {
+    &__content {
+      .menu-icon {
+        border: 2px solid;
+        display: none;
+        &.menu-close {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.header__content__nav {
+  background: beige;
+  color: var(--bg);
+  border-top: 2px solid;
+  position: fixed;
+  z-index: 9;
+  top: 100%;
+  right: 0;
+  left: 0;
+  padding: 20px var(--side-padding);
+  transition: all .5s;
+  @include df(normal, normal, column, 20px);
+  &__content {
+    @include df(normal, normal, column, 10px);
+    .details {
+      @include df(normal, normal, column, 5px);
+      .summary {
+        font-family: 'audio-wide';
+        outline: none;
+        font-weight: 700;
+        padding: 10px;
+        border: 1px solid;
+        background: rgba(#ccc, .3);
+        @include df(space-between, center, row, 10px);
+        svg {
+          width: 1rem;
+          transition: all .3s;
+        }
+      }
+      &::details-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+      }
+      &__content {
+        border: 1px solid;
+        list-style: none;
+        padding: 10px;
+        position: relative;
+        @include df(normal, normal, row wrap, 10px);
+        li {
+          font-family: 'outfit';
+          a {
+            @include btn(var(--bg), var(--text), var(--bg), var(--text));
+          }
+        }
+      }
+    }
+    .details[open] {
+      summary {
+        border-color: var(--teal);
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+      &::details-content {
+        max-height: 500px; // large enough to contain content
+      }
+    }
+  }
+  @media (min-width: $tab) {
+    position: relative;
+    top: 0%;
+    z-index: 10;
+    transform: none;
+    padding: 0;
+    border-top: none;
+    &__content {
+      background: var(--header-bg);
+      @include df(normal, normal, row, 10px);
+      .details {
+        @include df(normal, normal, column);
+        .summary {
+          background: transparent;
+          border-radius: 50px;
+          padding: 10px 20px;
+          color: var(--text);
+        }
+        &::details-content {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.5s ease;
+        }
+        &__content {
+          background: beige;
+          position: fixed;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          transition: opacity .3s, transform .3s;
+          transform: translateY(-100%);
+          padding: 10px var(--side-padding);
+        }
+        &[open] {
+          .summary {
+            border: 1px solid;
+          }
+          > .details__content {
+            opacity: 1;
+            z-index: 8;
+            transform: translateY(10px);
+            max-height: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+

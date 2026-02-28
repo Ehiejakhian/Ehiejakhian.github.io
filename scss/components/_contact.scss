@@ -1,0 +1,54 @@
+
+@use '../util/' as *;
+
+.contact {
+  min-height: 50dvh;
+  @include df(center, center, column, 20px);
+  & h1 {
+    @include h2;
+  }
+  &__links {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    @include df(center, center, row wrap, 20px);
+    & a{
+      @include btn;
+      & {
+        border: 2px solid var(--text);
+        font-size: 1.2rem;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        filter: brightness(0%) invert(1);
+      }
+    }
+    
+    #pinterest-link:hover {
+      background: crimson;
+    }
+    #linkedIn-link:hover {
+      background: dodgerblue;
+      color: var(--text);
+    }
+    #whatsapp-link:hover {
+      background: green;
+      color: var(--text);
+    }
+    
+    
+    #upwork-link:hover {
+      background: purple;
+      color: var(--text);
+    }
+    #github-link:hover {
+      background: white;
+      color: black;
+    }
+    #front-end-mentor-link:hover {
+      background: blueviolet;
+    }
+
+  }  
+}  

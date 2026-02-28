@@ -1,0 +1,46 @@
+
+
+@use '../util/' as *;
+
+.reviews {
+  padding: 50px var(--side-padding);
+  @include df(normal, normal, column, 25px);
+  
+  h1 {
+    @include h2;
+  }
+  &__content {
+    @include df(center, start, row wrap, 25px);
+    .review {
+      border-radius: 5px;
+      padding: 20px;
+      max-width: 400px;
+      border: 2px solid;
+      background: beige;
+      color: var(--bg);
+      display: grid;
+      gap: 10px;
+      .person {
+        border-bottom: 1px solid var(--gray);
+        padding-bottom: 15px;
+        @include df(normal, center, row, 10px);
+        #job {
+          h3 + span {
+            color: var(--gray);
+          }
+        }
+        img[alt="nameImg"] {
+          width: 32px;
+          height: 32px;
+          display: block;
+          border: 2px solid;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      & p {
+        padding-left: 42px;
+      }
+    }
+  }
+}

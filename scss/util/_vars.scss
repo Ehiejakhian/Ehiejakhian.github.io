@@ -1,0 +1,19 @@
+
+$mini-tab: 500px;
+$tab: 750px;
+$desktop: 1100px;
+
+:root {
+  --side-padding: clamp(20px, 5dvw, 10%);
+  --text: #fff;
+  --bg: #000000;
+  --header-bg: rgb(20, 20, 20);
+  --medium: #ccc;
+  --gray: rgb(65, 63, 63);
+  --teal: #16a2cc;
+
+  --facebook: #0d47c4;
+  --mail: #D44638;
+  --whatsapp: #25D366;
+}
+

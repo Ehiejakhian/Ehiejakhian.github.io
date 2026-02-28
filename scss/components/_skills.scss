@@ -1,0 +1,53 @@
+
+@use '../util/' as *;
+
+.skills {
+  min-height: 100dvh;
+  padding: 2rem var(--side-padding);
+  @include df(center, center, column, 2rem);
+
+  h1 {
+    @include h2;
+  }
+  &__content {
+    @include df(center, center, row wrap, 2rem);
+    >div {
+      @include df(normal, normal, column, 1rem);
+      ul {
+        list-style: none;
+        @include dg(auto-fit, 300px, 1fr, 1rem);
+        li {
+          border-radius: 5px;
+          overflow: hidden;
+          background: var(--bg);
+          border: 1px solid beige;
+          color: var(--text);
+          @include df;
+          &>div:first-of-type {
+            background: beige;
+            color: var(--bg);
+            flex: 1;
+            @include df(center, center, column, 10px);
+            i {
+              font-size: 2rem;
+            }
+            img {
+              width: 2rem;
+              filter: brightness(0%) grayscale(100);
+            }
+            &.special-case {
+              img {
+                filter: brightness(100%) grayscale(100);
+              }
+            }
+          }
+          &>div:last-of-type{
+            flex: 3;
+            padding: 10px 20px;
+            @include df(normal, normal, column, 10px);
+          }
+        }
+      }
+    }
+  }
+}

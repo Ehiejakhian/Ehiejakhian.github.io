@@ -1,20 +1,20 @@
-@use '../variables-and-mixins' as *;
+@use '../util/' as *;
 
 .faq {
-  grid-column: 1/-1;
-  @include df(normal, center, column, 20px);
+  padding: 20px var(--side-padding);
+  min-height: 50dvh;
+  @include df(center, center, column, 20px);
   h1 {
-    text-align: center;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    @include h2;
   }
   &__questions {
     width: 100%;
     max-width: 600px;
-    @include df(normal, normal, column, 20px);
+    @include df(normal, normal, column, 5px);
     details {
       width: 100%;
       transition: all .5s;
+      @include df(normal, normal, column, 5px);
       a {
         display: inline-block;
         color: #037d92;
@@ -22,42 +22,34 @@
         text-decoration: none;
         border-bottom: 1px solid;
       }
-      &::details-content {
-        block-size: 0;
-        overflow: hidden;
-        transition: all .5s;
-        transition-behavior: allow-discrete;
-      }
       summary {
-        border-bottom: 1px solid #ccc;
-        padding: 10px 0;
+        border: 1px solid var(--gray);
+        padding: 10px;
         outline: none;
         @include df(space-between, center, row, 10px);
         &::marker {
-          color: red;
           display: none;
         }
         &::after {
-          content: '>';
-          font-size: 20px;
-          transform: rotate(90deg);
+          content: '+';
+          width: 30px;
+          height: 30px;
+          border: 1px solid;
           transition: all .3s;
+          @include df(center, center);
         }
       }
       p {
-        color: #8f8f8f;
+        padding: 10px;
         opacity: 0;
+        color: var(--text);
+        background: var(--bg);
         transition: all .3s;
-        padding: 10px 0;
       }
       &[open] {
-        &::details-content {
-          block-size: auto;
-          block-size: calc-size(auto);
-        }
         summary {
           &::after {
-            transform: rotate(270deg);
+            content: '-';
           }
         }
         p {

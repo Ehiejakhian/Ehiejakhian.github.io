@@ -1,0 +1,25 @@
+@use '../util/' as *;
+
+.me {
+  &-normal {
+    opacity: .3;
+    position: absolute;
+    width: 350px;
+    right: 50px;
+    translate: 0 10%;
+  }
+  &-sighing {
+    opacity: .3;
+    position: absolute;
+    width: 300px;
+    left: 50px;
+  }
+  &-smiling {
+    opacity: .3;
+    position: absolute;
+    width: 250px;
+    right: 0px;
+    z-index: 3;
+    translate: 0 30%;
+  }
+}

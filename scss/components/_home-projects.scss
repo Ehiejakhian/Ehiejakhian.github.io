@@ -1,0 +1,11 @@
+@use '../util/' as *;
+
+.projects {
+  min-height: 100dvh;
+  padding: 2rem var(--side-padding);
+  @include df(center, center, column, 2rem);
+  
+  h1 {
+    @include h2;
+  }
+}
