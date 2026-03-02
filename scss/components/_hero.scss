@@ -55,7 +55,9 @@
         background-clip: text;
         color: transparent;
       }
-
+      p {
+        line-height: 1.5;
+      }
     }
     &__links {
       @include df(normal, normal, row, 20px);

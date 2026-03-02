@@ -28,10 +28,11 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: all .3s;
         }
       }
       .details {
-        background: #41431B;
+        background: var(--dark-cream);
         color: var(--text);
         @include df(center, center, column, 15px);
         h2 {
@@ -47,18 +48,25 @@
         }
         .tools {
           width: 100%;
+          padding: 5px;
           border-top: 1px solid var(--gray);
           background: beige;
           color: var(--bg);
           @include df(center, center, row, 10px);
           i {
-            font-size: 1.5rem;
             padding: 5px;
-            &.fa-html5 {color: #e34c26;}
-            &.fa-css3-alt {color: #264de4;}
-            &.fa-sass {color: #cd6799;}
-            &.fa-js {color: #f0db4f;}
-            &.fa-react {color: #61dbfb;}
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background: var(--dark-cream);
+            color: var(--cream);
+            font-size: 18px;
+            @include df(center, center);
+            // &.fa-html5 {color: #e34c26;}
+            // &.fa-css3-alt {color: #264de4;}
+            // &.fa-sass {color: #cd6799;}
+            // &.fa-js {color: #f0db4f;}
+            // &.fa-react {color: #61dbfb;}
           }
         }
       }

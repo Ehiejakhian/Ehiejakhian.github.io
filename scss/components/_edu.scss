@@ -1,8 +1,9 @@
 @use '../util/' as *;
 
 .edu {
+  min-height: 600px;
   padding: 20px var(--side-padding);
-  @include df(normal, center, column, 25px);
+  @include df(center, center, column, 25px);
 
   h1 {
     @include h2;
