@@ -1,0 +1,47 @@
+@use '../util/' as *;
+
+.arduino {
+  min-height: $mini-tab;
+  position: relative;
+  @include df(normal, normal, column);
+  &__img {
+    @include df(normal, normal, column);
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    padding: 20px var(--side-padding);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: var(--text);
+    @include df(center, center, column, 20px);
+    &::after {
+      content:'';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: crimson;
+      background: rgba(#121212, .5);
+    }
+    h1 {
+      @include h2;
+      & {
+        color: var(--text);
+      }
+    }
+    a {
+      @include btn;
+    }
+  }
+}
