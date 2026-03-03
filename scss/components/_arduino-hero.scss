@@ -1,6 +1,6 @@
 @use '../util/' as *;
 
-.arduino {
+section.arduino {
   min-height: $mini-tab;
   position: relative;
   @include df(normal, normal, column);

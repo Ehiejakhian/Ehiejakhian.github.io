@@ -18,5 +18,8 @@ $desktop: 1100px;
   --facebook: #0d47c4;
   --mail: #D44638;
   --whatsapp: #25D366;
+  @media (min-width: $desktop) {
+    --side-padding: 15%;
+  }
 }
 

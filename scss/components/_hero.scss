@@ -60,27 +60,25 @@
       }
     }
     &__links {
-      @include df(normal, normal, row, 20px);
+      margin-top: 15px;
+      @include df(normal, normal, row, 10px);
       & a {
         text-decoration: none;
         color: var(--text);
+        background: var(--dark-cream);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: all .3s;
+        color: var(--cream);
+        @include df(center, center);
         i {
-          font-size: 1.5rem;
-          transition: all  .2s;
+          font-size: 1.2rem;
+          transition: all  .3s;
         }
-        &:hover i {
-          color: #2695a8;
+        &:hover {
+          color: var(--teal);
           transform: scale(1.2);
-      
-          &.fa-facebook {
-            color: var(--facebook);
-          }
-          &.fa-envelope {
-            color: var(--mail);
-          }
-          &.fa-whatsapp {
-            color: var(--whatsapp);
-          }
         }
       }
     }
