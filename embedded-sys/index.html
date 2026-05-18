@@ -49,6 +49,7 @@
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../scss/css/main.css">
+  <link rel="stylesheet" href="../font-awesome/css/fontawesome.min.css"/>
   <link rel="canonical" href="https://ehiejakhian.github.io">
   <link rel="apple-touch-icon" href="../assets/images/myPictures/favicon.jpg">
 
@@ -146,37 +147,89 @@
     <!-- ARDUINO -->
     <section class="arduino">
       <div class="arduino__img">
-        <!-- <img src="../assets/images/arduino/bg1.png" alt="bg"> -->
+        <img src="../assets/images/arduino/bg1.png" alt="bg">
       </div>
       <div class="arduino__content">
-        <h1>Coming Soon</h1>
-        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus voluptas voluptatem rem dolorum atque.</p> -->
+        <div class="arduino__badge">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h1>My <span class="focus">Arduino</span> Projects</h1>
+        <p>Welcome to my Arduino and IoT playground. Here you'll find my projects and experiments.</p>
         <a href="#projects">
-          <i class="fas fa-chevron-down"></i>
+          <i class="fa fa-chevron-down"></i>
         </a>
+      </div>
+    </section>
+
+    <section class="ar_projects" id="projects">
+      <div class="ar_projects_project">
+        <img src="../assets/images/arduino/solar tracker design ND2 - 2026.png" alt="solar tracker"/>
+        <div class="text">
+          <h3>Solar Tracker</h3>
+          <p>A solar tracking system that follows the sun's movement to maximize energy absorption through adjustable panels.</p>
+          <div class="tools">
+            <span>Arduino</span>
+            <span>LDR Sensor</span>
+            <span>Servo Motor</span>
+            <span>Renewable Energy</span>
+          </div>
+          <div class="btns">
+            <a href="#"><i class="fa-solid fa-code"></i> View Code</a>
+            <a href="#" class="primary"><i class="fa-solid fa-globe"></i> View Site</a>
+          </div>
+        </div>
+      </div>
+      <div class="ar_projects_project">
+        <img src="../assets/images/arduino/Arduino_UNO_top.webp" alt="arduino uno board"/>
+        <div class="text">
+          <h3>Water Quality Testing</h3>
+          <p>An IoT-based water quality monitoring system that measures pH, turbidity, and temperature for real-time analysis.</p>
+          <div class="tools">
+            <span>Arduino</span>
+            <span>pH Sensor</span>
+            <span>Turbidity Sensor</span>
+            <span>IoT</span>
+          </div>
+          <div class="btns">
+            <a href="#"><i class="fa-solid fa-code"></i> View Code</a>
+            <a href="#" class="primary"><i class="fa-solid fa-globe"></i> View Site</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- FAQS -->
     <section id="faqs" class="faq">
-      <h1>How...</h1>
+      <h1>Any <span class="focus">Questions?</span></h1>
       <div class="faq__questions">
         <details name="details">
-          <summary>Did you rate yourself?</summary>
+          <summary>Are you currently open to oppurtunities?</summary>
           <p>
-            For some of my skills, I used the progress value I had on the site I learn from. <a href="www.w3schools.org">W3schools</a> for example has a progress tracking system and I used that in some of the values. For the others, I just assumed.
+            Yes, I am very much open to interships, collaborations, freelancee work, and vertually anything where I can learn and hopefully earn too.
           </p>
         </details>
         <details name="details">
-          <summary>Did you start coding?</summary>
+          <summary>How long does a project usually take?</summary>
           <p>
-            While attending classes for my National diploma in computer engineering, I was introduced a bit to HTML. I just got home, searched the stuff up on youtube and here I am. I was also inctroduced to Visual Basic using the .NET framework, and to C++ for writing Arduino code.
+            It depends on the complexity of the project, but small to medium projects take anywhre from a few days to a few weeks.
           </p>
         </details>
         <details name="details">
-          <summary>About your hobbies?</summary>
+          <summary>What kind of projects do you enjoy building?</summary>
           <p>
-            I love sketching, drawing comics and animation. I draw a lot or at least, I used to. I love to sing too. I love reading about discoveries and new science concepts. I can say Coding is a hobby of mine too. I also love watching movies (maybe too much).
+            I enjoy building projects the combine creativity, problem solving, and real world usefulness. Custom calculators are my specialty for now.
+          </p>
+        </details>
+        <details name="details">
+          <summary>How did you get into development?</summary>
+          <p>
+            While attending classes for my National diploma in computer engineering, I was introduced a bit to HTML. I just got home, searched the stuff up on youtube and here I am. I was also inctroduced to Visual Basic using the .NET framework, and to C++ for writing Arduino code. Now, I am learing to integrate all of them into simple modifable Iot infrastructures that can scale.
+          </p>
+        </details>
+        <details name="details">
+          <summary>How do you like to have fun?</summary>
+          <p>
+            I love sketching, drawing comics and animation. I draw a lot or at least, I used to. I love to sing too. I love reading about discoveries and new science concepts. Coding is a hobby of mine too. I also love watching movies (maybe too much).
             <br>Over all, I love telling others about God's purpose of a wonderful earth free from sufferning and pain. The bible may be old, but as one of Jehovah's witnesses, I believe it's a manual for life. See more about this gist at <a href="www.jw.org">JW.org</a>
           </p>
         </details>
@@ -218,7 +271,7 @@
   </footer>
 
 
-  <script defer src="../scripts/main.js"></script>
+  <script defer type="module" src="../scripts/main.js"></script>
   <script src="https://kit.fontawesome.com/e0883f8dbe.js" crossorigin="anonymous"></script>
 </body>
 </html>

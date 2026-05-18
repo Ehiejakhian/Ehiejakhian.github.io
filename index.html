@@ -48,6 +48,7 @@
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./scss/css/main.css">
+  <link rel="stylesheet" href="./font-awesome/css/fontawesome.min.css">
   <link rel="canonical" href="https://ehiejakhian.github.io">
   <link rel="apple-touch-icon" href="./assets/images/myPictures/favicon.jpg">
 
@@ -132,7 +133,9 @@
               <li><a href="./projects/">Front-end Projects</a></li>
               <li><a href="./embedded-sys/">Arduino Projects</a></li>
               <li><a href="./gallery/">Art Gallery</a></li>
-              <li><a href="./assets/Ejakhian_Ehi_Oseiwe_CV.pdf" download>Download CV</a></li>
+              <li><a href="./assets/Ejakhian_Ehi_Oseiwe_CV.pdf" download>
+                <i class="fa download"></i>
+                <span>Download CV</span></a></li>
             </ul>
           </details>
         </div>
@@ -163,7 +166,7 @@
           </p>
         </div>
         <div class="profile__content__links">
-          <a href="https://web.facebook.com/profile.php?id=100094574380684"><i class="fa-brands fa-facebook" title="facebook"></i></img></a>
+          <a href="https://web.facebook.com/profile.php?id=100094574380684"><i class="fa-brands fa fa-facebook" title="facebook"></i></img></a>
           <a href="mailto:ehiejakhian@gmail.com?subject=Hello20%Ehi!&body=I20%Checked20%your20%website!"><i class="fa-solid fa-envelope" title="mail"></i></a>
           <a href="https://wa.me/+2348142340182?text=Hello%20Ehi%20.%20I%20checked%20your%20website.%20"><i class="fa-brands fa-whatsapp" title="whatsapp"></i></img></a>
           <a href="https://github.com/Ehiejakhian"><i class="fa-brands fab fa-github" title="github"></i></img></a>
@@ -314,13 +317,13 @@
     <!-- EDUCATION -->
     <section id="education" class="edu">
       <img src="./assets/images/myPictures/Untitled37_20250812123123.png" class="me-normal">
-      <h1>My Education</h1>
+      <h1>My <span class="focus">Education</span></h1>
       
       <div class="edu__content">
         <div class="edu__content__stage poly">
-          <h3 class="edu__content__stage__year">2023 •  Till Date</h3>
+          <h3 class="edu__content__stage__year">2023 •  2025</h3>
           <div class="edu__content__stage__details">
-            <h3>Polytechnic</h3>
+            <h3>NATIONAL DIPLOMA IN COMPUTER ENGINEERING TECHNOLOGY</h3>
             <p>
               National Institute of Construction Technology and Management (NICTM)
             </p>
@@ -329,7 +332,7 @@
       </div>
     </section>
     
-    <!-- TESTIMONIALS -->
+    <!-- TESTIMONIALS
     <section id="reviews" class="reviews">
       <img src="./assets/images/myPictures/Untitled36_20250812123201.png" class="me-sighing" alt="me-sighing">
       <h1>Kind words from others…</h1>
@@ -364,7 +367,7 @@
         </div>
         <div class="review">
           <div class="person">
-            <img src="./assets/images/myPictures/favicon.jpg" alt="nameImg">
+            <img src="./assets/images/person-thumbnail.png" alt="nameImg">
             <div id="job">
               <h3>Euodia Esele</h3>
               <span>
@@ -377,28 +380,40 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- FAQS -->
     <section id="faqs" class="faq">
-      <h1>How...</h1>
+      <h1>Any <span class="focus">Questions?</span></h1>
       <div class="faq__questions">
         <details name="details">
-          <summary>Did you rate yourself?</summary>
+          <summary>Are you currently open to oppurtunities?</summary>
           <p>
-            For some of my skills, I used the progress value I had on the site I learn from. <a href="www.w3schools.org">W3schools</a> for example has a progress tracking system and I used that in some of the values. For the others, I just assumed.
+            Yes, I am very much open to interships, collaborations, freelancee work, and vertually anything where I can learn and hopefully earn too.
           </p>
         </details>
         <details name="details">
-          <summary>Did you start coding?</summary>
+          <summary>How long does a project usually take?</summary>
           <p>
-            While attending classes for my National diploma in computer engineering, I was introduced a bit to HTML. I just got home, searched the stuff up on youtube and here I am. I was also inctroduced to Visual Basic using the .NET framework, and to C++ for writing Arduino code.
+            It depends on the complexity of the project, but small to medium projects take anywhre from a few days to a few weeks.
           </p>
         </details>
         <details name="details">
-          <summary>About your hobbies?</summary>
+          <summary>What kind of projects do you enjoy building?</summary>
           <p>
-            I love sketching, drawing comics and animation. I draw a lot or at least, I used to. I love to sing too. I love reading about discoveries and new science concepts. I can say Coding is a hobby of mine too. I also love watching movies (maybe too much).
+            I enjoy building projects the combine creativity, problem solving, and real world usefulness. Custom calculators are my specialty for now.
+          </p>
+        </details>
+        <details name="details">
+          <summary>How did you get into development?</summary>
+          <p>
+            While attending classes for my National diploma in computer engineering, I was introduced a bit to HTML. I just got home, searched the stuff up on youtube and here I am. I was also inctroduced to Visual Basic using the .NET framework, and to C++ for writing Arduino code. Now, I am learing to integrate all of them into simple modifable Iot infrastructures that can scale.
+          </p>
+        </details>
+        <details name="details">
+          <summary>How do you like to have fun?</summary>
+          <p>
+            I love sketching, drawing comics and animation. I draw a lot or at least, I used to. I love to sing too. I love reading about discoveries and new science concepts. Coding is a hobby of mine too. I also love watching movies (maybe too much).
             <br>Over all, I love telling others about God's purpose of a wonderful earth free from sufferning and pain. The bible may be old, but as one of Jehovah's witnesses, I believe it's a manual for life. See more about this gist at <a href="www.jw.org">JW.org</a>
           </p>
         </details>
@@ -438,7 +453,7 @@
   </footer>
 
 
-  <script defer src="./scripts/main.js"></script>
+  <script defer  type="module" src="./scripts/main.js"></script>
   <script defer src="./scripts/fetch.js"></script>
   <script src="https://kit.fontawesome.com/e0883f8dbe.js" crossorigin="anonymous"></script>
 </body>

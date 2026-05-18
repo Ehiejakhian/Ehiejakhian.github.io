@@ -1,0 +1,159 @@
+@use '../util/' as *;
+
+.ar_projects {
+  padding: 40px var(--side-padding);
+  width: min(100%, 1280px);
+  margin-inline: auto;
+  @include df(normal, normal, column, 30px);
+
+  @media (min-width: $mini-tab) {
+    @include dg(auto-fit, 280px, 1fr, 24px);
+  }
+
+  @media (min-width: $tab) {
+    @include dg(auto-fit, 320px, 1fr, 28px);
+    padding: 50px var(--side-padding);
+  }
+
+  @media (min-width: $desktop) {
+    @include dg(auto-fit, 340px, 1fr, 32px);
+  }
+
+  &_project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .09);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 22px 75px rgba(0, 0, 0, .35);
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      border-color: rgba(22, 206, 255, .45);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, .5);
+    }
+
+    &::before {
+      content: "</>";
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      z-index: 2;
+      width: 50px;
+      height: 50px;
+      border-radius: 18px;
+      background: rgba(22, 206, 255, .12);
+      border: 1px solid rgba(22, 206, 255, .35);
+      color: #7ce8ff;
+      font-family: "audio-wide", sans-serif;
+      font-size: 1rem;
+      display: grid;
+      place-items: center;
+      backdrop-filter: blur(6px);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 220px;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s ease;
+    }
+
+    @media (min-width: $tab) {
+      img {
+        min-height: 300px;
+      }
+    }
+
+    .text {
+      position: relative;
+      padding: 26px 24px 28px;
+      color: var(--text);
+      background: linear-gradient(180deg, rgba(3, 11, 19, .02), rgba(2, 12, 23, .9));
+      @include df(normal, normal, column, 16px);
+
+      h3 {
+        font-family: 'audio-wide';
+        font-size: 1.7rem;
+        letter-spacing: .02em;
+        margin: 0;
+      }
+
+      p {
+        color: rgba(255, 255, 255, .72);
+        line-height: 1.8;
+        margin: 0;
+      }
+
+      .tools {
+        width: 100%;
+        @include df(start, center, row, 10px);
+        flex-wrap: wrap;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, .08);
+        margin-top: 10px;
+
+        span {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 14px;
+          border-radius: 999px;
+          background: rgba(22, 206, 255, .08);
+          color: #9ef0ff;
+          font-size: .92rem;
+          border: 1px solid rgba(22, 206, 255, .2);
+          white-space: nowrap;
+        }
+      }
+
+      .btns {
+        @include df(center, center, row, 15px);
+        flex-wrap: wrap;
+        margin-top: 12px;
+
+        a {
+          flex: 1 1 auto;
+          min-width: 145px;
+          text-align: center;
+        }
+
+        a {
+          @include btn(var(--text), var(--bg), var(--text), rgba(22, 206, 255, .4));
+          border-color: rgba(22, 206, 255, .35);
+          background: rgba(255, 255, 255, .04);
+          color: #c9f7ff;
+          font-size: .95rem;
+          padding: 12px 24px;
+          transition: transform .2s ease, background .2s ease, color .2s ease;
+
+          i {
+            margin-right: 8px;
+          }
+
+          &:hover {
+            background: rgba(16, 145, 189, .95);
+            color: #fff;
+            transform: translateY(-1px);
+          }
+
+          &.primary {
+            background: rgba(19, 212, 255, .9);
+            color: #000;
+            border-color: transparent;
+
+            &:hover {
+              background: #00d4ff;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

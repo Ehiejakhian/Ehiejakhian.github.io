@@ -9,12 +9,15 @@
 
 body { 
   position: relative;
-  font-family: 'comic-sans','comic-relief', 'outfit';
-  padding-top: 150px;
+  font-family: 'comic relief';
   color: var(--text);
   overflow-x: hidden;
   background: var(--bg);
+  padding: 150px 0 0 0;
   @include df(normal, normal, column, 0);
+  @media (min-width: $tab) {
+    padding-top: 50px;
+  }
 }
 
 main {
@@ -22,5 +25,12 @@ main {
   >section {
     padding-right: var(--side-padding);
     padding-left: var(--side-padding);
+  }
+}
+
+h1,h2,h3,h4 {
+  & .focus {
+    color: var(--teal);
+    -webkit-text-stroke: 1px var(--teal);
   }
 }

@@ -1,6 +1,11 @@
-window.onload = () => {
-    document.querySelector('.loader').style.display = "none"
-}
+import { sel } from './util/index.js';
+import closeDesktopNav from './closeDesktopNav.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    sel('.loader').style.display = "none";
+    closeDesktopNav();
+});
+
 
 //-----//Time and greeting//------//
 let today = new Date()
@@ -19,32 +24,34 @@ if (time>=0 && time<5) {
 }else if(time>=21 && time<=24) {
     greetingEl.textContent = ("How's your night?")
 }else if (time>24){
-    greetingEl.textContent = ("Hello!")
+    greetingEl.textContent = ("Hi!")
 }else {
-    greetingEl.textContent = ("Hello!")
+    greetingEl.textContent = ("Hi!")
 }
 
-let navBtn = document.querySelector('.nav-btn')
-navBtn.addEventListener('click', openMenu)
+/*
+    let navBtn = document.querySelector('.nav-btn')
+    navBtn.addEventListener('click', openMenu)
 
-let nav = document.querySelector('nav')
+    let nav = document.querySelector('nav')
 
-let menuOpen = false
-function openMenu() {
-    if (menuOpen) {
-        navBtn.classList.remove('open-a')
-        nav.classList.remove('open-nav')
-        menuOpen = false
-        console.log('menu closed')
-    } else {
-        navBtn.classList.add('open-a')
-        nav.classList.add('open-nav')
-        menuOpen = true
-        console.log('menu open')
+    let menuOpen = false
+    function openMenu() {
+        if (menuOpen) {
+            navBtn.classList.remove('open-a')
+            nav.classList.remove('open-nav')
+            menuOpen = false
+            console.log('menu closed')
+        } else {
+            navBtn.classList.add('open-a')
+            nav.classList.add('open-nav')
+            menuOpen = true
+            console.log('menu open')
+        }
+        return menuOpen
     }
-    return menuOpen
-}
 
 
-console.clear()
-console.log(document.querySelectorAll('h2#greeting-el'))
+    console.clear()
+    console.log(document.querySelectorAll('h2#greeting-el'))
+*/
