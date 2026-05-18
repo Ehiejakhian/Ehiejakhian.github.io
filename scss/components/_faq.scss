@@ -26,7 +26,7 @@
         border: 1px solid var(--gray);
         padding: 10px;
         outline: none;
-        background: rgba(teal,.1);
+        background: var(--teal-100);
         @include df(space-between, center, row, 10px);
         &::marker {
           display: none;

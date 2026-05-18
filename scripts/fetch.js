@@ -25,8 +25,14 @@ function getProjects(projects) {
     clone.querySelector('.projects__content__each__img').href = project.site;
     clone.querySelector('.projects__content__each__img img').src = project.image;
     clone.querySelector('.title').textContent = project.title;
+    let int = document.createElement('i');
     clone.querySelector('.dev-links a:first-child').href = project.code;
+    int.classList.add('fa-solid', 'fa-code');
+    clone.querySelector('.dev-links a:first-child').prepend(int);
+
     clone.querySelector('.dev-links a:last-child').href = project.site;
+    int.classList.add('fa-solid', 'fa-globe');
+    clone.querySelector('.dev-links a:last-child').prepend(int)
 
     let toolsContainer = clone.querySelector('.tools');
     toolsContainer.innerHTML = '';

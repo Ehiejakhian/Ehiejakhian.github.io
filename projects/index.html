@@ -141,10 +141,25 @@
   </header>
 
   <main id="whole-content">
+    <!-- ARDUINO -->
+    <section class="arduino">
+      <div class="arduino__img">
+        <img src="../assets/images/bg/code.png" alt="bg">
+      </div>
+      <div class="arduino__content">
+        <div class="arduino__badge">
+          <i class="fa fa-code"></i>
+        </div>
+        <h1>My <span class="focus">Web</span> Projects</h1>
+        <p>Welcome to my web projects. This isn't all of build but a honest collection of most of my fails and wins. Explore and Enjoy!</p>
+        <a href="#projects">
+          <i class="fa fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
     <!-- PROJECTS -->
     <section class="projects" id="projects">
-      <h1><span>Projects</span></h1>
-
       <div class="projects__content">
         <template id="project-template">
           <div class="projects__content__each">
@@ -153,9 +168,12 @@
             </a>
             <div class="details">
               <h2 class="title">Conference Ticket Generator</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam sapiente sed.
+              </p>
               <div class="dev-links">
                 <a href="https://github.com/Ehiejakhian/Frontend-Mentor---Conference-ticket-generator">View Code</a>
-                <a href="https://ehiejakhian.github.io/Frontend-Mentor---Conference-ticket-generator/">View Site</a>
+                <a href="https://ehiejakhian.github.io/Frontend-Mentor---Conference-ticket-generator/" class="view-site-btn">View Site</a>
               </div>
               <div class="tools">
                 <i class="fa-brands fa-html5"></i>
@@ -167,29 +185,41 @@
         </template>
       </div>
       
-      <a href="../" id="see-more-projects" class="projects__more-btn">To Home</a>
+      <a href="../" id="see-more-projects" class="projects__more-btn">Go back Home</a>
     </section>
 
     <!-- FAQS -->
     <section id="faqs" class="faq">
-      <h1>How...</h1>
+      <h1>Any <span class="focus">Questions?</span></h1>
       <div class="faq__questions">
         <details name="details">
-          <summary>Did you rate yourself?</summary>
+          <summary>Are you currently open to oppurtunities?</summary>
           <p>
-            For some of my skills, I used the progress value I had on the site I learn from. <a href="www.w3schools.org">W3schools</a> for example has a progress tracking system and I used that in some of the values. For the others, I just assumed.
+            Yes, I am very much open to interships, collaborations, freelancee work, and vertually anything where I can learn and hopefully earn too.
           </p>
         </details>
         <details name="details">
-          <summary>Did you start coding?</summary>
+          <summary>How long does a project usually take?</summary>
           <p>
-            While attending classes for my National diploma in computer engineering, I was introduced a bit to HTML. I just got home, searched the stuff up on youtube and here I am. I was also inctroduced to Visual Basic using the .NET framework, and to C++ for writing Arduino code.
+            It depends on the complexity of the project, but small to medium projects take anywhre from a few days to a few weeks.
           </p>
         </details>
         <details name="details">
-          <summary>About your hobbies?</summary>
+          <summary>What kind of projects do you enjoy building?</summary>
           <p>
-            I love sketching, drawing comics and animation. I draw a lot or at least, I used to. I love to sing too. I love reading about discoveries and new science concepts. I can say Coding is a hobby of mine too. I also love watching movies (maybe too much).
+            I enjoy building projects the combine creativity, problem solving, and real world usefulness. Custom calculators are my specialty for now.
+          </p>
+        </details>
+        <details name="details">
+          <summary>How did you get into development?</summary>
+          <p>
+            While attending classes for my National diploma in computer engineering, I was introduced a bit to HTML. I just got home, searched the stuff up on youtube and here I am. I was also inctroduced to Visual Basic using the .NET framework, and to C++ for writing Arduino code. Now, I am learing to integrate all of them into simple modifable Iot infrastructures that can scale.
+          </p>
+        </details>
+        <details name="details">
+          <summary>How do you like to have fun?</summary>
+          <p>
+            I love sketching, drawing comics and animation. I draw a lot or at least, I used to. I love to sing too. I love reading about discoveries and new science concepts. Coding is a hobby of mine too. I also love watching movies (maybe too much).
             <br>Over all, I love telling others about God's purpose of a wonderful earth free from sufferning and pain. The bible may be old, but as one of Jehovah's witnesses, I believe it's a manual for life. See more about this gist at <a href="www.jw.org">JW.org</a>
           </p>
         </details>
@@ -199,7 +229,7 @@
     <!-- CONTACT -->
     <section id="contact" class="contact">
       <img src="../assets/images/myPictures/Untitled38_20250812123033.png" alt="" class="me-smiling">
-      <h1>Contact Me</h1>
+      <h1><span class="focus">Contact</span> Me</h1>
       <div id="social-links" class="contact__links">
         <a href="+2348142340182" id="phone-link"><i class="fa-solid fa-phone"></i></a>
         <a href="https://pin.it/6eYrRLUYm" id="pinterest-link"><i class="fa-brands fa-pinterest"></i></a>
@@ -214,7 +244,7 @@
 
     <!-- CV -->
     <section class="cv" id="cv">
-      <h2>Curriculum Vitae</h2>
+      <h2>Curriculum <span class="focus">Vitae</span></h2>
       <p>Click the button below to download my CV.</p>
       <a href="../assets/Ejakhian_Ehi_Oseiwe_CV.pdf" download>Download CV</a>
     </section>

@@ -52,6 +52,10 @@
       background: var(--teal-100);
       box-shadow: 0 20px 40px rgba(2, 12, 23, .25);
       @include df(center, center);
+      i {
+        color: var(--teal);
+        font-size: 1.5rem;
+      }
     }
 
     h1 {

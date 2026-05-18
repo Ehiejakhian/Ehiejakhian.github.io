@@ -3,9 +3,26 @@
 .gallery {
   color: var(--text);
   padding: 20px var(--side-padding) 100px var(--side-padding);
+  margin-top: 100px;
   @include df(center, center, column, 40px);
   h2 {
     @include h2;
+    & {
+      font-family: "love-light", cursive;
+      font-weight: 400;
+      position: relative;
+    }
+    &::after {
+      content: '';
+      width: 100px;
+      height: 3px;
+      border-radius: 20px;
+      background: var(--teal);
+      position: absolute;
+      bottom: -10px;
+      right: 50%;
+      transform: translate(50%, 5px);
+    }
   }
   &__grid {
     width: 100%;
@@ -25,9 +42,11 @@
       height: 100%;
       grid-column: span 1;
       grid-row: span 1;
+      border: 1px solid transparent;
       animation: appear 5s linear;
       animation-timeline: view();
       animation-range: entry 0% cover 40%;
+      transition: all .3s;
       &.long {
         grid-row: span 2;
       }
@@ -35,6 +54,7 @@
         grid-column: span 2;
       }
       &:hover {
+        border-color: rgba(22, 206, 255, .45);
         img {
           transform: scale(1.05);
         }

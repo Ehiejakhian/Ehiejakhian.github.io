@@ -5,6 +5,9 @@
   text-align: center;
   min-height: 70dvh;
   @include df(center, center, column, 2rem);
+  @media (max-width: $tab) {
+    margin-top: 100px;
+  }
   >* {
     align-items: center;
   }
