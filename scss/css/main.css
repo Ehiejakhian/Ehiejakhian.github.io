@@ -494,6 +494,11 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
   display: block;
   transition: transform 0.4s ease;
 }
+@media (min-width: 500px) {
+  .ar_projects_project img {
+    max-height: 260px;
+  }
+}
 @media (min-width: 750px) {
   .ar_projects_project img {
     min-height: 300px;
@@ -523,15 +528,14 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
 }
 .ar_projects_project .text .tools {
   width: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-flow: row;
-  gap: 10px;
-  flex-wrap: wrap;
   padding-top: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 10px;
 }
 .ar_projects_project .text .tools span {
   display: inline-flex;
