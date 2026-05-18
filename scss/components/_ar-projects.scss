@@ -2,33 +2,27 @@
 
 .ar_projects {
   padding: 40px var(--side-padding);
-  width: min(100%, 1280px);
+  width: min(100%, 1100px);
   margin-inline: auto;
   @include df(normal, normal, column, 30px);
 
   @media (min-width: $mini-tab) {
-    @include dg(auto-fit, 280px, 1fr, 24px);
+    padding: 60px var(--side-padding);
+    @include dg(auto-fit, 300px, 1fr, 32px);
   }
-
-  @media (min-width: $tab) {
-    @include dg(auto-fit, 320px, 1fr, 28px);
-    padding: 50px var(--side-padding);
-  }
-
   @media (min-width: $desktop) {
-    @include dg(auto-fit, 340px, 1fr, 32px);
+    padding: 60px 0;
   }
 
   &_project {
     position: relative;
-    display: flex;
-    flex-direction: column;
     background: rgba(255, 255, 255, .05);
     border: 1px solid rgba(255, 255, 255, .09);
     border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 22px 75px rgba(0, 0, 0, .35);
     transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    @include df(normal, normal, column, 0);
 
     &:hover {
       transform: translateY(-8px);
@@ -48,7 +42,7 @@
       background: rgba(22, 206, 255, .12);
       border: 1px solid rgba(22, 206, 255, .35);
       color: #7ce8ff;
-      font-family: "audio-wide", sans-serif;
+      font-family: "jetbrains-mono", sans-serif;
       font-size: 1rem;
       display: grid;
       place-items: center;

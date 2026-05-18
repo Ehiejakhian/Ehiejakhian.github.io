@@ -44,28 +44,37 @@
     padding: 0 12px;
 
     .arduino__badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
       width: 64px;
       height: 64px;
+      padding: 10px;
       border-radius: 18px;
-      border: 1px solid rgba(22, 206, 255, .25);
-      background: rgba(22, 206, 255, .08);
-      color: #7ce8ff;
-      font-size: 1.35rem;
+      border: 1px solid var(--teal-200);
+      background: var(--teal-100);
       box-shadow: 0 20px 40px rgba(2, 12, 23, .25);
+      @include df(center, center);
     }
 
     h1 {
+      font-weight: 500;
+      font-family: 'audio-wide';
       font-size: clamp(2.8rem, 6vw, 4.6rem);
       line-height: 1.02;
       letter-spacing: .02em;
       margin: 0;
       color: var(--text);
       text-transform: none;
+      position: relative;
+      margin-bottom: 20px;
       &::after {
-        content: "";
+        content: '';
+        width: 100px;
+        height: 3px;
+        border-radius: 20px;
+        background: var(--teal);
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%, 20px);
       }
     }
 
@@ -79,19 +88,11 @@
 
     a {
       @include btn(var(--text), var(--bg), rgba(22, 206, 255, .12), rgba(22, 206, 255, .6));
-      border-color: rgba(22, 206, 255, .5);
-      background: rgba(255, 255, 255, .04);
-      padding: 14px 22px;
-      font-size: 1rem;
-      color: #c7f8ff;
-      margin-top: 10px;
+      border-color: var(--teal);
       transition: transform .2s ease, background .2s ease;
 
-      i {
-        margin-right: 8px;
-      }
-
       &:hover {
+        color: var(--text);
         background: rgba(22, 206, 255, .2);
         transform: translateY(-2px);
       }
