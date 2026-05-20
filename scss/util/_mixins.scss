@@ -13,7 +13,7 @@
   padding: 10px 20px;
   font: inherit;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   border: 1px solid;
   border-radius: 50px;
@@ -31,6 +31,20 @@
 @mixin h2 {
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
+}
+
+@mixin after-line($c: var(--text), $w: 70px, $h: 3px) {
+  position: relative;
+  &::after {
+    content: '';
+    width: $w;
+    height: $h;
+    background: $c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(10px);
+  }
 }
 
 @keyframes appear {

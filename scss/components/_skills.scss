@@ -19,21 +19,33 @@
         li {
           border-radius: 5px;
           overflow: hidden;
-          background: var(--bg);
-          border: 1px solid beige;
+          background: var(--teal-50);
+          border: 1px solid var(--teal-200);
           color: var(--text);
+          transition: all .3s;
           @include df;
+          &:hover {
+            transform: translateY(-2px);
+            border-color: var(--teal-300);
+            &>div:first-of-type {
+              background: var(--teal-200);
+            }
+          }
           &>div:first-of-type {
-            background: beige;
+            transition: all .3s;
+            background: var(--teal-100);
             color: var(--bg);
             flex: 1;
             @include df(center, center, column, 10px);
             i {
               font-size: 2rem;
+              color: var(--teal);
             }
             img {
               width: 2rem;
-              filter: brightness(0%) grayscale(100);
+              filter: brightness(0%) grayscale(100) invert(1);
+              // background: var(--teal);
+              -webkit-text-stroke: 1px green;
             }
             &.special-case {
               img {
@@ -45,6 +57,21 @@
             flex: 3;
             padding: 10px 20px;
             @include df(normal, normal, column, 10px);
+            h3 {
+              font-family: 'audio-wide';
+              margin-bottom: 10px;
+              position: relative;
+              &::after {
+                content: '';
+                width: 30px;
+                height: 3px;
+                background: var(--teal);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: translate(0, 10px);
+              }
+            }
           }
           &.more {
             min-height: 100px;
@@ -56,15 +83,19 @@
               transition: all .3s;
               @include df(center, center, column, 10px);
               span {
-                @include btn(var(--text), var(--bg), var(--text), var(--bg));
+                @include btn(var(--text), var(--bg), var(--teal), var(--teal-200));
               }
               &:hover {
-                background: rgba(#ccc, .1);
+                background: var(--teal-100);
               }
             }
-           }
+          }
         }
       }
     }
   }
+}
+
+.hero__tools {
+  margin-top: 100px;
 }

@@ -13,9 +13,8 @@
     width: 100%;
     @include df(center, center, row wrap, 20px);
     & a{
-      @include btn;
+      @include btn(var(--teal));
       & {
-        border: 2px solid var(--text);
         font-size: 1.2rem;
       }
       img {

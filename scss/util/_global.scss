@@ -28,6 +28,8 @@ main {
 h1,h2,h3,h4 {
   & .focus {
     color: var(--teal);
-    -webkit-text-stroke: 1px var(--teal);
   }
 }
+// h1 {
+//   font-family: 'audio-wide';
+// }

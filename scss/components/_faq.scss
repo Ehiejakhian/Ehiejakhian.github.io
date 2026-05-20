@@ -46,6 +46,7 @@
         color: var(--text);
         background: var(--bg);
         transition: all .3s;
+        line-height: 1.5;
       }
       &[open] {
         summary {

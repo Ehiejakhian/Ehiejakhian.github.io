@@ -47,10 +47,27 @@
     &__text {
       @include df(center, center, column, 10px);
       h1 {
+        position: relative;
+        margin-bottom: 10px;
         @include h2;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 100px;
+          height: 3px;
+          background: var(--teal);
+          transition: all .3s;
+          transform: translate(-50%,10px);
+          @media (min-width: $tab) {
+            transform: translate(0,10px);
+            left: 0;
+          }
+        }
       }
       & h3:first-of-type {
-        border-bottom: 2px solid gray;
+        // border-bottom: 2px solid gray;
         padding-bottom: 10px;
       }
       #greeting-el {
@@ -67,21 +84,22 @@
       @include df(normal, normal, row, 10px);
       & a {
         text-decoration: none;
-        color: var(--text);
-        background: var(--dark-cream);
+        color: var(--teal-200);
+        background: var(--teal-50);
+        border: 1px solid var(--teal-200);
         width: 50px;
         height: 50px;
         border-radius: 50%;
         transition: all .3s;
-        color: var(--cream);
         @include df(center, center);
         i {
           font-size: 1.2rem;
           transition: all  .3s;
         }
         &:hover {
+          border-color: var(--teal);
           color: var(--teal);
-          transform: scale(1.2);
+          transform: scale(1.2) translateY(-5px);
         }
       }
     }

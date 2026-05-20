@@ -13,7 +13,7 @@
       @include df(normal, normal, row wrap, 20px);
     }
     &__each {
-      border: 3px solid;
+      border: 1px solid;
       border-radius: 10px;
       overflow: hidden;
       flex: 1;
@@ -65,10 +65,10 @@
         padding: clamp(15px, 5dvw, 30px);
         @include df(normal, start, column, 10px);
         h2 {
+          font-family: 'audio-wide';
           font-weight: 400;
           font-size: clamp(1.5rem, 5dvw, 2rem);
-          border-bottom: 1px solid;
-          padding-bottom: 10px;
+          margin-bottom: 10px;
           width: 100%;
         }
         p {
@@ -78,19 +78,21 @@
           @include btn;
         }
       }
+      &:hover {
+        transform: scale(1.05);
+      }
       &.web-dev {
         $b: rgb(228, 0, 152);
         $b_a: rgba($b, .2);
         $blur: 10px;
         border-color:$b;
         transition: all .3s;
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: 0px 10px $blur $b_a, 0px -10px $blur $b_a, 10px 0px $blur $b_a, -10px 0px $blur $b_a;
-        }
         h2 {
-          font-family: 'jetbrains-mono';
-          font-weight: 700;
+          border-color: $b;
+          @include after-line($b);
+        }
+        &:hover {
+          box-shadow: 0px 2px $blur $b_a, 0px -2px $blur $b_a, 2px 0px $blur $b_a, -2px 0px $blur $b_a;
         }
       }
       &.embedded-sys {
@@ -99,12 +101,12 @@
         $blur: 10px;
         border-color:$b;
         transition: all .3s;
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: 0px 10px $blur $b_a, 0px -10px $blur $b_a, 10px 0px $blur $b_a, -10px 0px $blur $b_a;
-        }
         h2 {
-          font-family: 'audio-wide';
+          border-color: $b;
+          @include after-line($b);
+        }
+        &:hover {
+          box-shadow: 0px 2px $blur $b_a, 0px -2px $blur $b_a, 2px 0px $blur $b_a, -2px 0px $blur $b_a;
         }
       }
       &.artist {
@@ -113,12 +115,12 @@
         $blur: 10px;
         border-color:$b;
         transition: all .3s;
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: 0px 10px $blur $b_a, 0px -10px $blur $b_a, 10px 0px $blur $b_a, -10px 0px $blur $b_a;
-        }
         h2 {
-          font-family: 'comic sans ms';
+          border-color: $b;
+          @include after-line($b);
+        }
+        &:hover {
+            box-shadow: 0px 2px $blur $b_a, 0px -2px $blur $b_a, 2px 0px $blur $b_a, -2px 0px $blur $b_a;
         }
       }
     }
