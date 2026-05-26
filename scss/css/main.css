@@ -24,11 +24,15 @@
 }
 @font-face {
   font-family: "manrope";
-  src: url("../../assets/fonts/manrope.tff");
+  src: url("../../assets/fonts/manrope.ttf");
 }
 @font-face {
   font-family: "cascadia-code";
-  src: url("../../assets/fonts/cascadia-code.tff");
+  src: url("../../assets/fonts/cascadia-code.ttf");
+}
+@font-face {
+  font-family: "space-grotesk";
+  src: url("../../assets/fonts/space-grotesk.ttf");
 }
 :root {
   scroll-behavior: smooth;
@@ -89,7 +93,7 @@
 
 body {
   position: relative;
-  font-family: "comic relief";
+  font-family: "space-grotesk";
   color: var(--text);
   overflow-x: hidden;
   background: var(--bg);
@@ -223,8 +227,14 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
 .profile__content__text h1 {
   position: relative;
   margin-bottom: 10px;
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
+}
+.profile__content__text h1 .focus {
+  background-image: linear-gradient(90deg, var(--text), var(--teal));
+  background-clip: text;
+  color: transparent;
 }
 .profile__content__text h1::after {
   content: "";
@@ -327,6 +337,7 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
   gap: 2rem;
 }
 .skills h1 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
 }
@@ -477,6 +488,7 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
   gap: 2rem;
 }
 .projects h1 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
 }
@@ -677,6 +689,7 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
   gap: 25px;
 }
 .edu h1 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
 }
@@ -755,6 +768,7 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
   gap: 20px;
 }
 .contact h1 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
 }
@@ -844,6 +858,7 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
   gap: 25px;
 }
 .reviews h1 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
 }
@@ -937,6 +952,7 @@ footer div {
   gap: 20px;
 }
 .faq h1 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
 }
@@ -1288,6 +1304,7 @@ footer div {
   gap: 2rem;
 }
 .projects h1 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
   text-align: center;
@@ -1594,6 +1611,7 @@ footer div {
   gap: 40px;
 }
 .as h2 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
 }
@@ -1789,6 +1807,7 @@ footer div {
   gap: 40px;
 }
 .gallery h2 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
 }
@@ -2026,6 +2045,7 @@ footer div {
   gap: 20px;
 }
 .cv h2 {
+  font-family: "audio-wide";
   font-size: clamp(2rem, 5dvw, 3.5rem);
   color: var(--text);
 }

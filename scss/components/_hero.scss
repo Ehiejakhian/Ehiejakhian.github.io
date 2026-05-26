@@ -50,6 +50,9 @@
         position: relative;
         margin-bottom: 10px;
         @include h2;
+        & .focus {
+          @include gradient-text(var(--text), var(--teal));
+        }
         &::after {
           content: '';
           position: absolute;
