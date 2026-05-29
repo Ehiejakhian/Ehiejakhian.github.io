@@ -38,6 +38,7 @@
   scroll-behavior: smooth;
   --side-padding: clamp(20px, 5dvw, 10%);
   --text: #fff;
+  --text-light: #f5f5f5;
   --bg: #000000;
   --header-bg: rgb(20, 20, 20);
   --medium: #ccc;
@@ -1984,7 +1985,7 @@ footer div {
   line-height: 1.02;
   letter-spacing: 0.02em;
   margin: 0;
-  color: var(--text);
+  color: var(--text-light);
   text-transform: none;
   position: relative;
   margin-bottom: 20px;
@@ -2008,7 +2009,7 @@ footer div {
   margin: 0 auto;
 }
 .hero__arduino__content a, .hero__front-end__content a {
-  color: var(--text);
+  color: var(--text-light);
   outline: transparent;
   background: transparent;
   padding: 10px 20px;
@@ -2028,12 +2029,12 @@ footer div {
 }
 .hero__arduino__content a:hover, .hero__front-end__content a:hover {
   color: var(--bg);
-  background: rgba(22, 206, 255, 0.12);
-  border-color: rgba(22, 206, 255, 0.6);
+  background: var(--teal-300);
+  border-color: var(--text);
 }
 .hero__arduino__content a, .hero__front-end__content a {
   border-color: var(--teal);
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: all 0.3s;
 }
 .hero__arduino__content a:hover, .hero__front-end__content a:hover {
   color: var(--text);

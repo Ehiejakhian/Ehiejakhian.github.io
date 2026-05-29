@@ -65,7 +65,7 @@
       line-height: 1.02;
       letter-spacing: .02em;
       margin: 0;
-      color: var(--text);
+      color: var(--text-light);
       text-transform: none;
       position: relative;
       margin-bottom: 20px;
@@ -91,9 +91,9 @@
     }
 
     a {
-      @include btn(var(--text), var(--bg), rgba(22, 206, 255, .12), rgba(22, 206, 255, .6));
+      @include btn(var(--text-light), var(--bg));
       border-color: var(--teal);
-      transition: transform .2s ease, background .2s ease;
+      transition: all .3s;
 
       &:hover {
         color: var(--text);
