@@ -7,8 +7,9 @@
   gap: $g;
 }
 
-@mixin btn($c:var(--text), $hover_c:#000, $hover_bg:var(--medium),$hover__bor:var(--text), $font: "audio-wide") {
+@mixin btn($c:var(--text), $hover_c:#000, $hover_bg:var(--teal-300),$hover__bor:var(--text), $font: "audio-wide") {
   color: $c;
+  outline: transparent;
   background: transparent;
   padding: 10px 20px;
   font: inherit;

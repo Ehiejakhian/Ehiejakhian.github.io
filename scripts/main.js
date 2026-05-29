@@ -1,32 +1,33 @@
-import { sel } from './util/index.js';
-import closeDesktopNav from './closeDesktopNav.js';
+import { sel } from "./util/index.js";
+import closeDesktopNav from "./closeDesktopNav.js";
+import listenForThemeChange from "./theme.js";
 
-document.addEventListener('DOMContentLoaded', () => {
-    sel('.loader').style.display = "none";
+document.addEventListener("DOMContentLoaded", () => {
+    sel(".loader").style.display = "none";
     closeDesktopNav();
+    listenForThemeChange();
 });
 
-
 //-----//Time and greeting//------//
-let today = new Date()
-let time= today.getHours()
+let today = new Date();
+let time = today.getHours();
 
-let greetingEl = document.getElementById("greeting-el")
+let greetingEl = document.getElementById("greeting-el");
 
-if (time>=0 && time<5) {
-    greetingEl.textContent = ("How's your night?")
-}else if (time>=5 && time<12) {
-    greetingEl.textContent = ("Good Morning!")
-}else if (time>=12 && time<16) {
-    greetingEl.textContent = ("Good Afternoon!")
-}else if (time>=16 && time<21) {
-    greetingEl.textContent = ("Good Evening!")
-}else if(time>=21 && time<=24) {
-    greetingEl.textContent = ("How's your night?")
-}else if (time>24){
-    greetingEl.textContent = ("Hi!")
-}else {
-    greetingEl.textContent = ("Hi!")
+if (time >= 0 && time < 5) {
+  greetingEl.textContent = "How's your night?";
+} else if (time >= 5 && time < 12) {
+  greetingEl.textContent = "Good Morning!";
+} else if (time >= 12 && time < 16) {
+  greetingEl.textContent = "Good Afternoon!";
+} else if (time >= 16 && time < 21) {
+  greetingEl.textContent = "Good Evening!";
+} else if (time >= 21 && time <= 24) {
+  greetingEl.textContent = "How's your night?";
+} else if (time > 24) {
+  greetingEl.textContent = "Hi!";
+} else {
+  greetingEl.textContent = "Hi!";
 }
 
 /*

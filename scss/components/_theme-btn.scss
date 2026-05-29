@@ -1,0 +1,23 @@
+
+@use '../util/' as *;
+
+.theme-btn {
+  @include btn;
+  & {
+    padding: 10px;
+    svg {
+      fill: var(--text);
+    }
+  }
+  .theme-icon-light {
+    display: none;
+  }
+  &.dark {
+    .theme-icon-light {
+      display: block;
+    }
+    .theme-icon-dark {
+      display: none;
+    }
+  }
+}

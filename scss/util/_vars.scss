@@ -26,5 +26,14 @@ $desktop: 1100px;
   @media (min-width: $desktop) {
     --side-padding: 15%;
   }
+  &[data-theme="light"] {
+    --text: #000;
+    --bg: #fff;
+    --header-bg: rgb(240, 240, 240);
+    --medium: #333;
+    --gray: rgb(120, 120, 120);
+    --cream: #f5f5dc;
+    --dark-cream: #e0e0d1;
+  }
 }
 
