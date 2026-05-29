@@ -7,10 +7,10 @@
   @include df(center, center, column, 2rem);
 
   h1 {
-    @include h2;
     text-align: center;
     width: 100%;
     margin-bottom: 0;
+    @include h2;
   }
 
   .projects__subtitle {
@@ -157,18 +157,29 @@
               color: var(--text);
             }
           }
+          span {
+            font-weight: 700;
+            color: var(--teal);
+            &::before {
+              content: '#';
+            }
+          }
+          &.light-mode {
+            i {
+              color: var(--teal);
+            }
+          }
         }
       }
 
-      &:hover {
+      &:hover, &:focus-within, &:focus {
         transform: translateY(-6px);
         border-color: var(--teal);
         .details {
-          .each {
-            .tools {
-              i {
-                color: var(--text);
-              }
+          .tools {
+            border-color: var(--text);
+            i {
+              color: var(--text);
             }
           }
         }
@@ -177,18 +188,7 @@
   }
 
   &__more-btn {
-    @include btn(var(--text), var(--bg), rgba(22, 206, 255, .12), rgba(22, 206, 255, .4));
-    background: rgba(255, 255, 255, .06);
-    border-color: rgba(255, 255, 255, .08);
-    color: #cfefff;
-    padding: 14px 28px;
-    margin-top: 16px;
-    transition: transform .2s ease, background .2s ease;
-
-    &:hover {
-      background: rgba(22, 206, 255, .2);
-      transform: translateY(-2px);
-    }
+    @include btn(var(--text), var(--text));
   }
 
   @media (max-width: $mini-tab) {

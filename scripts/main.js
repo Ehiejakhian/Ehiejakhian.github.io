@@ -3,9 +3,9 @@ import closeDesktopNav from "./closeDesktopNav.js";
 import listenForThemeChange from "./theme.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    sel(".loader").style.display = "none";
-    closeDesktopNav();
-    listenForThemeChange();
+  sel(".loader").style.display = "none";
+  closeDesktopNav();
+  listenForThemeChange();
 });
 
 //-----//Time and greeting//------//

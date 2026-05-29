@@ -1,10 +1,9 @@
 
-import { sel } from "./util/index.js";
+import { sel, addClass, removeClass } from "./util/index.js";
 
 export default function listenForThemeChange() {
   let themeBtn = sel('.theme-btn');
   let current = localStorage.getItem('EhiEjakhian-theme') || 'light';
-  console.log(localStorage.getItem('EhiEjakhian-theme'));
   setLocalStorageTheme(current);
 
   themeBtn.addEventListener('click', (e) => {
@@ -16,12 +15,21 @@ export default function listenForThemeChange() {
   function setLocalStorageTheme(theme) {
     sel(':root').setAttribute('data-theme', theme);
     current = theme;
-    theme == 'light'
-      ? themeBtn.classList.add('light')
-      : themeBtn.classList.remove('dark');
-      theme == 'dark'
-      ? themeBtn.classList.add('dark')
-      : themeBtn.classList.remove('light');
+    if (theme == 'light') {
+      themeBtn.classList.add('light');
+      themeBtn.classList.remove('dark');
+
+      removeClass('main *', 'dark-mode')
+      addClass('main *', 'light-mode')
+
+    } else if (theme == 'dark') {
+      themeBtn.classList.add('dark')
+      themeBtn.classList.remove('light');
+
+      addClass('main *', 'dark-mode')
+      removeClass('main *', 'light-mode')
+    }
+      
     saveTheme(current);
   }
   
@@ -31,20 +39,23 @@ export default function listenForThemeChange() {
       current = 'dark'
       themeBtn.classList.remove('light');
       themeBtn.classList.add('dark');
-  
-      saveTheme(current);
+
+      sel('main *', true).classList.add('dark-mode')
+      sel('main *', true).classList.remove('light-mode')
+
     } else if (current = 'dark') {
       sel(':root').setAttribute('data-theme', 'light');
       current = 'light'
       themeBtn.classList.remove('dark');
       themeBtn.classList.add('light');
   
-      saveTheme(current);
+      sel('main *', true).classList.add('light-mode')
+      sel('main *', true).classList.remove('dark-mode')
     }
+    saveTheme(current);
   }
 
   function saveTheme(theme) {
-    console.log(theme);
     localStorage.setItem('EhiEjakhian-theme',theme);
   }
 }

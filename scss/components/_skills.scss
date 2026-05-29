@@ -44,8 +44,9 @@
             img {
               width: 2rem;
               filter: brightness(0%) grayscale(100) invert(1);
-              // background: var(--teal);
-              -webkit-text-stroke: 1px green;
+              &.light-mode {
+                filter: brightness(0%) grayscale(40) invert(0);
+              }
             }
             &.special-case {
               img {

@@ -20,6 +20,7 @@
   border-radius: 50px;
   transition: all .3s;
   font-family: $font;
+  cursor: pointer;
   @include df(center, center, row, 10px);
   &:hover {
     $c: #ccc;

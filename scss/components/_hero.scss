@@ -25,21 +25,6 @@
         max-width: 15.7em;
       }
     }
-    svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 600px;
-      height: auto;
-      z-index: -1;
-      fill: var(--text);
-      display: none;
-
-      @media (max-width: 29.68em) {
-        width: 350px;
-      }
-    }
   }
   
   &__content {
@@ -87,21 +72,20 @@
       @include df(normal, normal, row, 10px);
       & a {
         text-decoration: none;
-        color: var(--teal-200);
-        background: var(--teal-50);
-        border: 1px solid var(--teal-200);
+        color: var(--teal);
+        background: var(--teal-100);
+        border: 1px solid;
         width: 50px;
         height: 50px;
         border-radius: 50%;
         transition: all .3s;
-        @include df(center, center);
+        @include df(center, center, row wrap);
         i {
           font-size: 1.2rem;
           transition: all  .3s;
         }
         &:hover {
-          border-color: var(--teal);
-          color: var(--teal);
+          color: var(--text);
           transform: scale(1.2) translateY(-5px);
         }
       }

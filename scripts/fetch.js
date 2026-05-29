@@ -1,4 +1,5 @@
-
+import listenForThemeChange from "./theme.js";
+import { sel } from "./util/index.js";
 
 fetch('../scripts/projects.json')
   .then(response => response.json())
@@ -11,6 +12,7 @@ fetch('../scripts/projects.json')
 let projectsContainer = document.querySelector('.projects__content');
 let projectTemplate = document.querySelector('#project-template');
 let projectElement = projectTemplate.content;
+
 function getProjects(projects) {
   projectsContainer.innerHTML = '';
   
@@ -21,18 +23,25 @@ function getProjects(projects) {
       }
     }
     let clone = document.importNode(projectElement, true);
-  
+    
+    // Image
     clone.querySelector('.projects__content__each__img').href = project.site;
     clone.querySelector('.projects__content__each__img img').src = project.image;
-    clone.querySelector('.title').textContent = project.title;
-    let int = document.createElement('i');
-    clone.querySelector('.dev-links a:first-child').href = project.code;
-    int.classList.add('fa-solid', 'fa-code');
-    clone.querySelector('.dev-links a:first-child').prepend(int);
 
+    // Title
+    clone.querySelector('.title').textContent = project.title;
+
+    // Link to code
+    let codeIcon = document.createElement('i');
+    codeIcon.classList.add('fa', 'fa-solid', 'fa-code');
+    clone.querySelector('.dev-links a:first-child').href = project.code;
+    clone.querySelector('.dev-links a:first-of-type').prepend(codeIcon)
+    
+    // Link to site
+    let siteIcon = document.createElement('i');
+    siteIcon.classList.add('fa', 'fa-solid', 'fa-globe');
     clone.querySelector('.dev-links a:last-child').href = project.site;
-    int.classList.add('fa-solid', 'fa-globe');
-    clone.querySelector('.dev-links a:last-child').prepend(int)
+    clone.querySelector('.dev-links a:last-child').prepend(siteIcon)
 
     let toolsContainer = clone.querySelector('.tools');
     toolsContainer.innerHTML = '';
@@ -43,6 +52,7 @@ function getProjects(projects) {
   
     projectsContainer.appendChild(clone);
   }
+  listenForThemeChange();
 }
 
 function decideToolHTML(tool) {

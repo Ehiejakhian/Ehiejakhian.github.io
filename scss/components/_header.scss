@@ -106,6 +106,7 @@
   left: 0;
   padding: 20px var(--side-padding);
   transition: all .5s;
+  border-top: 2px solid var(--text);
   @include df(normal, normal, column, 20px);
   &__content {
     @include df(normal, normal, column, 10px);
