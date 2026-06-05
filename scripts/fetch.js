@@ -30,6 +30,9 @@ function getProjects(projects) {
 
     // Title
     clone.querySelector('.title').textContent = project.title;
+    clone.querySelector('.title + p')
+      ? clone.querySelector('.title + p').textContent = project.description
+      : null;
 
     // Link to code
     let codeIcon = document.createElement('i');

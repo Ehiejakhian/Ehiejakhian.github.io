@@ -2,11 +2,29 @@
 
   {
     "class": ["each-whole"],
+    "title": "Ohons Tech Aluminum",
+    "site": "https://ohons-tech.github.io/",
+    "code": "https://github.com/ohons-tech/ohons-tech.github.io",
+    "image": "../../assets/images/projects/ohons-tech1.png",
+    "description": "A modern and responsive website for Ohons Tech Aluminum, a company that specializes in aluminum fabrication and glass installation.",
+    "tools": ["html", "scss", "javascript"]
+  },
+  {
+    "class": ["each-whole"],
+    "title": "Aluminum Calc",
+    "site": "https://aluminum-calcs.github.io/",
+    "code": "https://github.com/Aluminum-Calcs",
+    "image": "../../assets/images/projects/aluminum-calc.png",
+    "description": "A multi-kit web tool still in development that makes life easier for aluminum and glass fabricators.",
+    "tools": ["html", "scss", "javascript"]
+  },
+  {
+    "class": ["each-whole"],
     "title": "Conference Ticket Generator",
     "site": "https://ehiejakhian.github.io/Frontend-Mentor---Conference-ticket-generator/",
     "code": "https://github.com/Ehiejakhian/Frontend-Mentor---Conference-ticket-generator",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/v1734612242/Challenges/c9o1buzwrz4kvvydxyv7.jpg",
-    "description": "A responsive CSS Grid layout.",
+    "description": "A well designed ticket generator form component for a conference event.",
     "tools": ["html", "scss", "javascript"]
   },
   {
