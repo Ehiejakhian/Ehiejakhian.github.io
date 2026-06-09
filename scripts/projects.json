@@ -29,6 +29,15 @@
   },
   {
     "class": ["each-whole"],
+    "title": "Product List Cart",
+    "site": "https://ehiejakhian.github.io/Frontend-Mentor-Product-list-with-cart/",
+    "code": "https://github.com/Ehiejakhian/Frontend-Mentor-Product-list-with-cart",
+    "image": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/hnwdoqpec5hxujjl1nj7.jpg",
+    "description": "A responsive product list cart layout with real time UI updates, confirmation popups and a checkout form.",
+    "tools": ["html", "scss", "javascript"]
+  },
+  {
+    "class": ["each-whole"],
     "title": "Bento Grid",
     "site": "https://ehiejakhian.github.io/Bento-grid/",
     "code": "https://github.com/Ehiejakhian/Bento-grid",
