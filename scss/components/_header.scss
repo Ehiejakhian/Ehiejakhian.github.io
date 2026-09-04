@@ -45,6 +45,7 @@
       width: 45px;
       height: 40px;
       transition: all .3s;
+      margin-left: auto;
       @include df(normal, normal, column, 4px);
       span {
         height: 3px;

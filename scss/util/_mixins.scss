@@ -67,6 +67,13 @@
   }
 }
 
+//fri, sept 4, 2026
+@keyframes loader {
+  0% {left: 0%}
+  50% {left: calc(100% - 25%); right: 0%}
+  100% {left: 0%}
+}
+
 //Older mixins
 @mixin display-grid($numCols, $min-width, $max-width, $gap) {
   display: grid;

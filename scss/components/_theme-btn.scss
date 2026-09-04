@@ -5,6 +5,7 @@
   @include btn;
   & {
     padding: 10px;
+    border-radius: 0;
     svg {
       fill: var(--text);
     }

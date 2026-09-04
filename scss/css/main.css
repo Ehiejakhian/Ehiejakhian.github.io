@@ -79,6 +79,18 @@
     scale: 1;
   }
 }
+@keyframes loader {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 75%;
+    right: 0%;
+  }
+  100% {
+    left: 0%;
+  }
+}
 @keyframes load {
   0% {
     transform: rotate(0deg);
@@ -143,33 +155,33 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
   gap: 0;
 }
 .loader__spinner {
-  height: 70px;
-  width: 70px;
-  border: 5px solid transparent;
-  border-top: 5px solid var(--teal);
-  border-radius: 50%;
-  animation: load 0.8s linear 0s infinite normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  gap: 0;
+  position: relative;
+  font-size: 1.5rem;
 }
-.loader__spinner > span {
+.loader__spinner .focus {
+  color: var(--teal);
+}
+.loader__spinner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: inherit;
-  animation: none;
-  animation: counterRotate 0.8s linear 0s infinite normal;
-  color: var(--medium);
-  border: 1px solid;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  gap: 0;
+  height: 1px;
+  background: var(--text);
+  transform: translateY(10px);
+}
+.loader__spinner::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  height: 5px;
+  background: var(--teal);
+  transform: translateY(10px);
+  animation: loader 2s ease-in-out infinite;
 }
 
 .profile {
@@ -894,6 +906,7 @@ footer div {
   width: 45px;
   height: 40px;
   transition: all 0.3s;
+  margin-left: auto;
   display: flex;
   justify-content: normal;
   align-items: normal;
@@ -2029,6 +2042,7 @@ footer div {
 }
 .theme-btn {
   padding: 10px;
+  border-radius: 0;
 }
 .theme-btn svg {
   fill: var(--text);
