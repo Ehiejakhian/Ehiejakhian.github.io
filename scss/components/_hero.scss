@@ -12,18 +12,35 @@
     align-items: center;
   }
    
-  &__img {
+    &__img {
+    --pop: 12%;          // how far your head sticks out above the arch
+
     position: relative;
-    display: inline-block;
+    isolation: isolate;  // keeps the arch behind the image
+    margin: 0;
+    width: 400px;
+    max-width: 100%;
+    line-height: 0;
+    border-bottom: 4px solid var(--teal);  // flat base line
+
+    @media (max-width: 29.68em) {
+      width: 15.7em;
+    }
+
+    // flat arch: rounded top, flat bottom
+    &::before {
+      content: '';
+      position: absolute;
+      inset: var(--pop) 0 0 0;
+      z-index: -1;
+      border-radius: 999px 999px 0 0;
+      background: var(--teal-100);
+    }
+
     #profileImg {
-      border-radius: 50%;
-      max-width: 400px;
-      filter: brightness(1);
-      z-index: 2;
-    
-      @media (max-width: 29.68em) {
-        max-width: 15.7em;
-      }
+      display: block;
+      width: 100%;
+      height: auto;
     }
   }
   

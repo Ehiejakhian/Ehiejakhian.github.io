@@ -202,19 +202,32 @@ h1 .focus, h2 .focus, h3 .focus, h4 .focus {
   align-items: center;
 }
 .profile__img {
+  --pop: 12%;
   position: relative;
-  display: inline-block;
-}
-.profile__img #profileImg {
-  border-radius: 50%;
-  max-width: 400px;
-  filter: brightness(1);
-  z-index: 2;
+  isolation: isolate;
+  margin: 0;
+  width: 400px;
+  max-width: 100%;
+  line-height: 0;
+  border-bottom: 4px solid var(--teal);
 }
 @media (max-width: 29.68em) {
-  .profile__img #profileImg {
-    max-width: 15.7em;
+  .profile__img {
+    width: 15.7em;
   }
+}
+.profile__img::before {
+  content: "";
+  position: absolute;
+  inset: var(--pop) 0 0 0;
+  z-index: -1;
+  border-radius: 999px 999px 0 0;
+  background: var(--teal-100);
+}
+.profile__img #profileImg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .profile__content {
   display: flex;
