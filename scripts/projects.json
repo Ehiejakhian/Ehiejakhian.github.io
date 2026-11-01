@@ -1,13 +1,21 @@
 [
-
   {
     "class": ["each-whole"],
-    "title": "Ohons Tech Aluminum",
-    "site": "https://ohons-tech.github.io/",
-    "code": "https://github.com/ohons-tech/ohons-tech.github.io",
-    "image": "../../assets/images/projects/ohons-tech1.png",
-    "description": "A modern and responsive website for Ohons Tech Aluminum, a company that specializes in aluminum fabrication and glass installation.",
-    "tools": ["html", "scss", "javascript"]
+    "title": "SamLi Thrift Website and Store",
+    "site": "https://samli-thrift.github.io/",
+    "code": "https://github.com/samli-thrift/samli-thrift.github.io",
+    "image": "../../assets/images/projects/samli-thrift.png",
+    "description": "An online thrift store for a Nigerian fashion vendor. Shoppers can search and filter by category, style and environment, browse graded products with clear prices in ₦, and order through WhatsApp. Built with React and SCSS as a fast, mobile-friendly storefront that earns buyers' trust.",
+    "tools": ["react", "html", "scss", "javascript", "ai", "github"]
+  },
+  {
+    "class": ["each-whole"],
+    "title": "Aluminum Calc (Upgrade)",
+    "site": "https://aluminum-calcs.github.io/aluminum-calcs-new/",
+    "code": "https://github.com/Aluminum-Calcs/aluminum-calcs-new",
+    "image": "../../assets/images/projects/aluminum-calc-new.png",
+    "description": "A React rebuild of my Aluminum Calc, the toolkit of calculators for aluminum and glass fabricators, including item pricing. Rebuilt as a cleaner, more scalable base so new calculators are easier to add. Still in active development.",
+    "tools": ["html", "scss", "javascript", "react", "ai", "github"]
   },
   {
     "class": ["each-whole"],
@@ -15,8 +23,17 @@
     "site": "https://aluminum-calcs.github.io/",
     "code": "https://github.com/Aluminum-Calcs",
     "image": "../../assets/images/projects/aluminum-calc.png",
-    "description": "A multi-kit web tool still in development that makes life easier for aluminum and glass fabricators.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "The original Aluminum Calc: a set of calculators for aluminum and glass fabricators, including item pricing, built with plain HTML, SCSS and JavaScript to replace slow manual math in the workshop.",
+    "tools": ["html", "scss", "javascript", "github"]
+  },
+  {
+    "class": ["each-whole"],
+    "title": "Ohons Tech Aluminum",
+    "site": "https://ohons-tech.github.io/",
+    "code": "https://github.com/ohons-tech/ohons-tech.github.io",
+    "image": "../../assets/images/projects/ohons-tech.png",
+    "description": "A modern, responsive website for Ohons Tech Aluminum, a company specializing in aluminum fabrication and glass installation. It presents their services clearly on any screen size.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -24,8 +41,8 @@
     "site": "https://ehiejakhian.github.io/Frontend-Mentor---Conference-ticket-generator/",
     "code": "https://github.com/Ehiejakhian/Frontend-Mentor---Conference-ticket-generator",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/v1734612242/Challenges/c9o1buzwrz4kvvydxyv7.jpg",
-    "description": "A well designed ticket generator form component for a conference event.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A Frontend Mentor challenge: a conference ticket form that turns an attendee's details into a ready-to-share ticket.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -33,8 +50,8 @@
     "site": "https://ehiejakhian.github.io/Frontend-Mentor-Product-list-with-cart/",
     "code": "https://github.com/Ehiejakhian/Frontend-Mentor-Product-list-with-cart",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/hnwdoqpec5hxujjl1nj7.jpg",
-    "description": "A responsive product list cart layout with real time UI updates, confirmation popups and a checkout form.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A responsive product list with a working cart. Items can be added and removed with totals updating in real time, followed by a confirmation popup and a checkout form.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -42,8 +59,8 @@
     "site": "https://ehiejakhian.github.io/Bento-grid/",
     "code": "https://github.com/Ehiejakhian/Bento-grid",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/v1726215288/Challenges/sxzfwoarhrwt3gnz4qyg.jpg",
-    "description": "A responsive CSS Grid layout.",
-    "tools": ["html", "scss"]
+    "description": "A Frontend Mentor challenge built with CSS Grid: a bento-style layout of mixed-size cards that reflows cleanly from desktop to mobile.",
+    "tools": ["html", "scss", "github"]
   },
   {
     "class": ["each-whole"],
@@ -51,8 +68,8 @@
     "site": "https://ehiejakhian.github.io/Frontend-Mentor-News-homepage/",
     "code": "https://github.com/Ehiejakhian/Frontend-Mentor-News-homepage",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/v1716303124/Challenges/vwwgu7qn7emmj2vqboax.jpg",
-    "description": "A responsive news homepage layout.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A responsive news homepage with a featured story and sidebar on desktop, and a mobile-friendly menu on smaller screens.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -60,8 +77,8 @@
     "site": "https://ehiejakhian.github.io/Intro-section-with-dropdown-navigation/",
     "code": "https://github.com/Ehiejakhian/Intro-section-with-dropdown-navigation",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/v1649934549/Challenges/yoglpvvo0vggjf9ekjey.jpg",
-    "description": "A responsive intro section with dropdown navigation.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A responsive intro section with dropdown navigation that works as a full menu on desktop and a slide-in menu on mobile.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -69,8 +86,8 @@
     "site": "https://ehiejakhian.github.io/Stats-preview-card-component-solution/",
     "code": "https://github.com/Ehiejakhian/Stats-preview-card-component-solution",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/v1618491773/Challenges/pnczwsvslfwimxcqjrwm.jpg",
-    "description": "A responsive stats preview card component.",
-    "tools": ["html", "scss"]
+    "description": "A responsive stats card that pairs a headline and key figures with an image overlay, laid out for both mobile and desktop.",
+    "tools": ["html", "scss", "github"]
   },
   {
     "class": ["each-whole"],
@@ -78,8 +95,8 @@
     "site": "https://ehiejakhian.github.io/Frontend-Mentor-Loopstudios-landing-page/",
     "code": "https://github.com/Ehiejakhian/Frontend-Mentor-Loopstudios-landing-page",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/kfaa5whc9ukiqp3tqseo.jpg",
-    "description": "A responsive landing page for Loop Studios.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A responsive landing page for a creative studio, with a bold hero, a grid of featured projects and a mobile menu.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -87,8 +104,8 @@
     "site": "https://ehiejakhian.github.io/Four-card-feature-section-solution/",
     "code": "https://github.com/Ehiejakhian/Four-card-feature-section-solution",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/v1739441713/Challenges/dwcp29pbz7i9iqv2gues.jpg",
-    "description": "A responsive four card feature section layout.",
-    "tools": ["html", "scss"]
+    "description": "A responsive feature section of four cards that rearranges from a stacked mobile layout to a staggered desktop grid.",
+    "tools": ["html", "scss", "github"]
   },
   {
     "class": ["each-whole"],
@@ -96,8 +113,8 @@
     "site": "https://ehiejakhian.github.io/Frontend-Mentor-Sunnyside-agency-landing-page/",
     "code": "https://github.com/Ehiejakhian/Frontend-Mentor-Sunnyside-agency-landing-page",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/wqzotbyfysz9pbfk9jus.jpg",
-    "description": "A responsive landing page for a creative agency.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A responsive landing page for Sunnyside, a creative agency, with a hero, feature sections and a gallery that adapt across screen sizes.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -105,8 +122,8 @@
     "site": "https://ehiejakhian.github.io/My-First-JS-Calculator/",
     "code": "https://github.com/Ehiejakhian/My-First-JS-Calculator",
     "image": "../../assets/images/projects/simple-calc.png",
-    "description": "A simple JavaScript calculator that performs basic arithmetic operations.",
-    "tools": ["html", "css", "javascript"]
+    "description": "My first JavaScript project: a calculator for basic arithmetic, built to practice DOM events and handling user input.",
+    "tools": ["html", "css", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -114,8 +131,8 @@
     "site": "https://ehiejakhian.github.io/Age-calculator-app/",
     "code": "https://github.com/Ehiejakhian/Age-calculator-app",
     "image": "../../assets/images/projects/age-calculator.png",
-    "description": "A simple age calculator app that calculates your age based on your date of birth.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "Enter a date of birth and get your exact age in years, months and days, with validation for invalid dates.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -123,8 +140,8 @@
     "site": "https://ehiejakhian.github.io/Binary-Calculator/",
     "code": "https://github.com/Ehiejakhian/Binary-Calculator",
     "image": "../../assets/images/projects/binary-calc.png",
-    "description": "A simple binary calculator app that calculates decimal numbers to their binary, octal and hexadecimal equivalents.",
-    "tools": ["html", "css", "javascript"]
+    "description": "Type in a decimal number and instantly see its binary, octal and hexadecimal equivalents. Built without the inbuilt javascript toString() function.",
+    "tools": ["html", "css", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -132,8 +149,8 @@
     "site": "https://ehiejakhian.github.io/Huddle-landing-page-with-a-single-introductory-section/",
     "code": "https://github.com/Ehiejakhian/Huddle-landing-page-with-a-single-introductory-section",
     "image": "../../assets/images/projects/Huddle-landing-page.png",
-    "description": "A responsive landing page for a tech startup.",
-    "tools": ["html", "scss"]
+    "description": "A responsive single-section landing page for Huddle, a tech startup, with a clear call to action.",
+    "tools": ["html", "scss", "github"]
   },
   {
     "class": ["each-whole"],
@@ -141,8 +158,8 @@
     "site": "https://ehiejakhian.github.io/Fylo-data-storage-component/",
     "code": "https://github.com/Ehiejakhian/Fylo-data-storage-component",
     "image": "../../assets/images/projects/Fylo-data-storage-component.png",
-    "description": "A data storage component for Fylo.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A responsive data storage component for Fylo that shows used and remaining space with a progress bar.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -150,8 +167,8 @@
     "site": "https://ehiejakhian.github.io/Newsletter-sign-up-form-with-success-message/",
     "code": "https://github.com/Ehiejakhian/Newsletter-sign-up-form-with-success-message",
     "image": "../../assets/images/projects/newsletter-sign-up-page.png",
-    "description": "A newsletter sign-up form with success message.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A newsletter sign-up form with email validation and a success message once you subscribe.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -159,8 +176,8 @@
     "site": "https://ehiejakhian.github.io/Contact-form/",
     "code": "https://github.com/Ehiejakhian/Contact-form",
     "image": "../../assets/images/projects/Contact-form.png",
-    "description": "A contact form component.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A contact form with required-field validation and a confirmation message when it's submitted.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -168,8 +185,8 @@
     "site": "https://ehiejakhian.github.io/Mortgage-repayment-calculator/",
     "code": "https://github.com/Ehiejakhian/Mortgage-repayment-calculator",
     "image": "../../assets/images/projects/mortgage-calculator.png",
-    "description": "A mortgage repayment calculator.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A calculator that works out monthly and total mortgage repayments from the loan amount, term and interest rate, with form validation.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -177,8 +194,8 @@
     "site": "https://ehiejakhian.github.io/Intro-component-with-sign-up-form/",
     "code": "https://github.com/Ehiejakhian/Intro-component-with-sign-up-form",
     "image": "../../assets/images/projects/intro-component-sign-up-page.png",
-    "description": "An intro component with sign-up form.",
-    "tools": ["html", "scss", "javascript"]
+    "description": "A responsive intro section with a sign-up form that checks each field and shows clear error messages.",
+    "tools": ["html", "scss", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -186,8 +203,8 @@
     "site": "https://ehiejakhian.github.io/Product-preview-card-component/",
     "code": "https://github.com/Ehiejakhian/Product-preview-card-component",
     "image": "../../assets/images/projects/product-preview-card-component-main.png",
-    "description": "A product preview card component.",
-    "tools": ["html", "scss"]
+    "description": "A responsive product preview card with an image, pricing and an add-to-cart button, laid out differently on mobile and desktop.",
+    "tools": ["html", "scss", "github"]
   },
   {
     "class": ["each-whole"],
@@ -195,8 +212,8 @@
     "site": "https://ehiejakhian.github.io/Clipboard-landing-page/",
     "code": "https://github.com/Ehiejakhian/Clipboard-landing-page",
     "image": "../../assets/images/projects/clipboard.jpg",
-    "description": "A landing page for Clipboard.",
-    "tools": ["html", "css"]
+    "description": "A responsive landing page for Clipboard, a productivity app, with feature blocks and a call to action. Built with plain HTML and CSS.",
+    "tools": ["html", "css", "github"]
   },
   {
     "class": ["each-whole"],
@@ -204,8 +221,8 @@
     "site": "https://ehiejakhian.github.io/FAQ-accordion/",
     "code": "https://github.com/Ehiejakhian/FAQ-accordion",
     "image": "../../assets/images/projects/faq-accordion.jpg",
-    "description": "An FAQ accordion component.",
-    "tools": ["html", "css"]
+    "description": "An accordion component where each question expands and collapses to reveal its answer. Built with plain HTML and CSS.",
+    "tools": ["html", "css", "github"]
   },
   {
     "class": ["each-whole"],
@@ -213,8 +230,8 @@
     "site": "https://ehiejakhian.github.io/Tip-calculator-app/",
     "code": "https://github.com/Ehiejakhian/Tip-calculator-app",
     "image": "../../assets/images/projects/tip-calculator.png",
-    "description": "A tip calculator app.",
-    "tools": ["html", "css", "javascript"]
+    "description": "A tip calculator that splits a bill between any number of people at a chosen tip percentage and shows the amount each person pays.",
+    "tools": ["html", "css", "javascript", "github"]
   },
   {
     "class": ["each-whole"],
@@ -222,8 +239,8 @@
     "site": "https://ehiejakhian.github.io/Fylo-landing-page-with-two-column-layout/",
     "code": "https://github.com/Ehiejakhian/Fylo-landing-page-with-two-column-layout",
     "image": "../../assets/images/projects/fylo.jpg",
-    "description": "A landing page for Fylo with two-column layout.",
-    "tools": ["html", "css"]
+    "description": "A responsive landing page for Fylo with a two-column layout that stacks cleanly on smaller screens.",
+    "tools": ["html", "css", "github"]
   },
   {
     "class": ["each-whole"],
@@ -231,8 +248,8 @@
     "site": "https://ehiejakhian.github.io/Huddle-landing-page-with-alternating-feature-blocks/",
     "code": "https://github.com/Ehiejakhian/Huddle-landing-page-with-alternating-feature-blocks",
     "image": "../../assets/images/projects/huddle.jpg",
-    "description": "A landing page for Huddle with alternating feature blocks.",
-    "tools": ["html", "css"]
+    "description": "A responsive landing page for Huddle with alternating image and text feature blocks.",
+    "tools": ["html", "css", "github"]
   },
   {
     "class": ["each-whole"],
@@ -240,8 +257,8 @@
     "site": "https://ehiejakhian.github.io/NFT-preview-card-component/",
     "code": "https://github.com/Ehiejakhian/NFT-preview-card-component",
     "image": "../../assets/images/projects/nft.jpg",
-    "description": "An NFT preview card component.",
-    "tools": ["html", "css"]
+    "description": "A responsive NFT preview card with an image hover overlay, price and creator details.",
+    "tools": ["html", "css", "github"]
   },
   {
     "class": ["each-whole"],
@@ -249,8 +266,8 @@
     "site": "https://ehiejakhian.github.io/Testimonials-grid-section/",
     "code": "https://github.com/Ehiejakhian/Testimonials-grid-section",
     "image": "../../assets/images/projects/testmonials.jpg",
-    "description": "A testimonials grid section.",
-    "tools": ["html", "css"]
+    "description": "A responsive grid of customer testimonials in cards of different sizes that reflows across screen sizes.",
+    "tools": ["html", "css", "github"]
   },
   {
     "class": ["each-whole"],
@@ -258,8 +275,8 @@
     "site": "https://ehiejakhian.github.io/FEM-ASS-Result-Summary-Component-/",
     "code": "https://github.com/Ehiejakhian/FEM-ASS-Result-Summary-Component-",
     "image": "https://res.cloudinary.com/dz209s6jk/image/upload/v1737452746/Challenges/tp5n0bl8lklo455hz5il.jpg",
-    "description": "A results summary component.",
-    "tools": ["html", "css"]
+    "description": "A results summary card that shows an overall score alongside a colour-coded breakdown by category.",
+    "tools": ["html", "css", "github"]
   },
   {
     "class": ["each-whole"],
@@ -267,8 +284,8 @@
     "site": "https://ehiejakhian.github.io/ASS4-Frontendmentor.io/",
     "code": "https://github.com/Ehiejakhian/ASS4-Frontendmentor.io",
     "image": "../../assets/images/projects/blog-preview-card.png",
-    "description": "A blog preview card.",
-    "tools": ["html", "css"]
+    "description": "A clean blog preview card with a cover image, category tag, publish date, headline and author.",
+    "tools": ["html", "css", "github"]
   },
   {
     "class": ["each-whole"],
@@ -276,7 +293,7 @@
     "site": "https://ehiejakhian.github.io/FrontendmentorAss2/",
     "code": "https://github.com/Ehiejakhian/FrontendmentorAss2",
     "image": "../../assets/images/projects/social-links-profile.png",
-    "description": "A social links profile component.",
-    "tools": ["html", "css"]
+    "description": "A simple profile card with an avatar, a short bio and links to social profiles.",
+    "tools": ["html", "css", "github"]
   }
 ]

@@ -70,6 +70,12 @@ function decideToolHTML(tool) {
     case 'javascript':
       toolEl.classList.add('fa-brands', 'fa-js');
       break;
+    case 'github':
+      toolEl.classList.add('fa-brands', 'fa-github');
+      break;
+    case 'ai':
+      toolEl.classList.add('fa-solid', 'fa-robot');
+      break;
     case 'react':
       toolEl.classList.add('fa-brands', 'fa-react');
       break;
